@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 5 (% in Animation)</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        background-color: aquamarine;
+        border: 3px solid black;
+        position: absolute;
+        top: 120px;
+        left: 200px;
+        /*
+        animation-name: colorAnimate;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-direction: normal;
+        animation-direction: alternate;
+        animation-direction: alternate-reverse;
+    */
+        /* animation: colorAnimate 6s linear 4s infinite normal; */
+        animation: colorAnimate 9s linear 3s infinite normal;
+      }
+
+      @keyframes colorAnimate {
+        0% {
+          left: 0px;
+          background-color: yellow;
+        }
+
+        50%{
+          left: 300px;
+          background-color: blue;
+          color: white;
+          border-radius: 30%;
+        }
+
+        75% {
+          left: 500px;
+          background-color: orangered;
+          color: white;
+          border-radius: 40%;
+        }
+
+        100%{
+          left: 800px;
+          background-color: lightgreen;
+          color: white;
+          border-radius: 50%;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>animation</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+h1 {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  background-color: orange;
+  border: 3px solid black;
+  /*
+    padding-top: 25px; 
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    */
+  /* padding: 25px; */
+  /* padding Shorthand: padding-top | padding-right | padding-buttom | padding-left; */
+  padding: 40px 20px 0px 100px;
+}
+
+p {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-color: green;
+  /*
+    padding shorthand: top = 40 | left & right = 20 | buttom = 30px;
+    */
+  padding: 40px 20px 30px;
+}
+
+h5 {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+/*    
+  padding-top:30px;
+  padding-right:20px;
+  padding-buttom:40px;
+  padding-left:10px;
+
+  padding Shorthand: padding-top | padding-right | padding-buttom | padding-left;
+  padding: 30px 20px 40px 10px
+        
+  padding Shorthand: padding-top | padding-right | padding-buttom | padding-left;
+  padding: 25px;   applied 25px in all 4 direction;
+
+  padding Shorthand: top | right-left | buttom |
+  padding: 40px 20px 30px;
+
+  padding Shorthand: top-butttom | right-left 
+  padding: 30px 30px;
+*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level_5 (transition property)</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        background-color: aquamarine;
+        border: 2x solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        /* transition-property:all;
+           transition-duration: 2s;
+           transition-timing-function: ease-in;
+           transition-delay: 1s;
+         */
+        transition: all 1s ease-in 0.4s;
+      }
+
+      
+      div:hover {
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is ParaGraph</p>
+    </div>
+  </body>
+</html>

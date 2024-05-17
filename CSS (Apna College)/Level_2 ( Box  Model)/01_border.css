@@ -1,0 +1,49 @@
+div {
+  height: 100px;
+  width: 200px;
+  background-color: aqua;
+  text-align: center;
+  /* border-width: 5px; */
+  /* border-style: solid;  */
+  /* border-color: black; */
+
+  /* Shorthand boder: border Width, border style , border color */
+  /* border: 5px solid black; */
+  border: 5px double salmon;
+  /* border: 5px dotted burlywood; */
+}
+
+
+h1 {
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  background-color: lawngreen;
+  border: 6px solid orangered;
+}
+
+
+h2 {
+  height: 75px;
+  width: 300px;
+  background-color: yellow;
+  border: 5px solid blue;
+}  
+
+
+h3 {
+  height: 50px;
+  width: 300px;
+  text-align: right;
+  background-color: plum;
+  border: 5px solid black;
+}
+
+
+p {
+  background-color: palegoldenrod;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: right;
+  border: 7px double orangered;
+} 

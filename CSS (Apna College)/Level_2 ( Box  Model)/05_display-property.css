@@ -1,0 +1,57 @@
+#one {
+  background-color: blue;
+  display: inline; /* set nhi hoga*/
+  width: 700px; /* set nhi hoga*/
+  margin: 40px;
+  margin-top: 100px; /* set nhi hoga*/
+  margin-bottom: 300px; /* set nhi hoga*/
+  padding: 25px;
+  /* display: inline 
+    me margin top & buttom ka set nhi kr skte hai bas left aur right ka magin set hoga. height & width vi set nhi kr skte display inline me
+  */
+}
+
+#two {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 25px;
+  padding: 25px;
+  display: none; 
+   /*display: none krne se content hide ho jaega & no space is reserved.*/
+  visibility: hidden;
+}
+
+#three {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  margin: 25px;
+  padding: 25px;
+  display: inline-block;
+  visibility: hidden;
+  /*visibility: hidden; kr dene se content hide ho jaega but space is reserved.*/
+}
+
+#four {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  margin: 25px;
+  padding: 25px;
+  display: inline-block;
+}
+
+/* h1 => block elements (take 100% width) */
+h1 {
+  background-color: crimson;
+}
+
+/* sapn, a => inline element (takes only the  required space)*/
+span {
+  background-color: orangered;
+}
+
+a {
+  background-color: orchid;
+}

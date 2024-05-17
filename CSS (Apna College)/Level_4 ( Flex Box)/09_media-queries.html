@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Quaries</title>
+    <style>
+      .container {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+      }
+
+      div #box1 {
+        height: 150px;
+        width: 150px;
+        background-color: pink;
+      }
+
+      /* Agar width size 600px hai toh E color apply kr doo shift 600px pe kam jata pe nhi */
+      @media (width: 600px) {
+        div {
+          background-color: red;
+        }
+        div #box1 {
+          background-color: lightgreen;
+        }
+      }
+
+      /* kam se kam width 650px ho tab uspe E color Apply kr doo */
+      @media (min-width: 650px) {
+        div #box1 {
+          background-color: green;
+        }
+      }
+
+      /* 500px width se kam pe E color Apply kr doo */
+      @media (max-width: 500px) {
+        div {
+          background-color: lightsalmon;
+        }
+      }
+
+       @media (min-width: 600px) And (max-width: 700px) {
+        div {
+          background-color: yellow;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1">Box 1</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* 
+  text-align: left/ right/ centre
+  text-align: start/ end 
+ */
+
+p {
+  text-align: right;
+  background-color: aqua;
+}
+
+/* 
+  text-decoration: underline/ line-through/ overline/ wavy underline; 
+  text-decoration: none;
+*/
+
+
+h1 {
+  /* text-align: left; */
+  /* text-align: right; */
+  text-align: center;
+  /* text-decoration: underline; */
+  /* text-decoration: line-through; */
+  text-decoration: overline;
+}
+
+h2 {
+  text-align: start; /* text-align: left; */
+  text-align: end; /* text-align: right; */
+  text-decoration: line-through;
+  text-decoration: wavy underline green;
+  text-decoration: underline dotted;
+  text-decoration: underline overline line-through;
+  text-decoration: underline overline #3aff28;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+     font-weight: normal/ bold/ bolder/ lighter;
+     font-weigt:100-900
+   */
+
+#h1 {
+  font-weight: 100;
+}
+
+#h2 {
+  font-weight: 900;
+}
+
+#h3 {
+  font-weight: bold;
+}
+
+#h4 {
+  font-weight: 500;
+}
+
+#h5 {
+  font-weight: lighter;
+}
+
+#h6 {
+  font-weight: bolder;
+}
+
+#h7 {
+  font-weight: normal;
+}
+
+/* font-family: cursivre  */
+#one {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#two {
+  font-family: cursive;
+}

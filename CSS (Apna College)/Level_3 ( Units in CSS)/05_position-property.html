@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level_3 (Postion property in CSS)</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 2px solid black;
+        display: inline-block;
+      }
+
+      #box1 {
+      /*koie changes nhi hoga position:static krne se because this is by default*/
+      position: static; 
+      top: 50px;
+      bottom: 50px;
+      }
+
+      #box2 {
+      /* khud ke relative means jaha khada hai ohi se start kr dega change krna */
+      position: relative;
+      top: 50px;
+      left: 50px;
+      /* bottom: 100px; */
+      }
+
+    /* positioned relative to its closest position ancestor
+      (but closest ancestor(static na ho) aur kuch vi ho relative, fixed etc). */
+      #box3 {
+      position: absolute;
+      top: 100px;
+      /* left: 50px; */
+      right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Static:- default position(The top, right, bottom, left, and z-index properties have no effect )
+      </li>
+
+      <li>
+        relative:- element is relative to itself.(The top, right, bottom, left, and z-index will work )
+      </li>
+
+      <li>
+        absolute:- positioned relative to its closest position ancestor(but closest ancestor(static na ho) aur kuch vi ho relative, fixed etc).
+        <p>
+          (removed from flow => apply hote hi work krne lagea aur sayad gayab ho jaey aur dikhe na jab tak koie property na apply ho)
+        </p>
+        <p>
+          for example: here h1 in ancestor(parent) of a tag
+            <h1>
+                <a></a>
+            </h1> 
+        </p>
+      </li>
+
+      <li>
+        fixed:-positioned relative to browser.(removed from flow)
+      </li>
+
+      <li>
+        sticky:-positioned based on user's scrool position.
+      </li>
+    </ul>
+
+    <h1>
+      Position playground
+    </h1>
+
+    <div id="box1" style="background-color: red">box1</div>
+    <div id="box2" style="background-color: rgb(70, 223, 49)">box2</div>
+    <div id="box3" style="background-color: yellow">box3</div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexBox (flex-grow , flex-shrink &flex-basis)</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: blue;
+        /* flex-shrink: 0; */
+        /* flex-shrink: 0.5; */
+        /* flex-shrink: 1; */
+        flex-shrink: 5;
+        flex-grow: 1;
+      }
+
+      #box3 {
+        background-color: pink;
+      }
+
+      #box4 {
+        background-color: yellow;
+        flex-grow: 2;
+      }
+
+      #box5 {
+        background-color: maroon;
+        flex-basis: 400px; /*particular box ka width starting se Etna set ho jaega*/
+      }
+
+      #box6 {
+        background-color: limegreen;
+        /* flex-grow: 5; */
+        /* flex-shrink: 3; */
+        /* flex-basis: 600px; */
+        /* shorthand flex: flex-grow | flex-shrink | flex-basis; */
+        flex: 0 5 700px;
+      }
+
+      #containers {
+        height: 500px;
+        border: 2px solid orangered;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        /* flex-wrap: wrap; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      The flex-grow property specifies how much a flex item will grow relative
+      to the rest of the flex items.
+    </h1>
+
+    <h1>
+      flex-shrink => The flex-shrink property specifies how much a flex item
+      will shrink relative to the rest of the flex items.
+    </h1>
+
+    <div id="containers">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+      <div class="box" id="box6">Box5</div>
+    </div>
+  </body>
+</html>

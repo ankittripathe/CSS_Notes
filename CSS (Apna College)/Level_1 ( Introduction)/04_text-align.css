@@ -1,0 +1,32 @@
+/* 
+  text-align: left/ right/ centre
+  text-align: start/ end 
+ */
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+  /* background-color: orangered; */
+}
+
+p {
+  text-align: end;
+  background-color: yellow;
+}
+
+h4 {
+  text-align: start;
+  background-color: salmon;
+}
+
+#headingFive{
+    text-align: center;
+    background-color: rgb(25, 156, 156);
+}

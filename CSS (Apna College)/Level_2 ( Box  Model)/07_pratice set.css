@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+/* header */
+#navbar {
+  background-color: #0f1111;
+  height: 50px;
+}
+
+#logo {
+  color: #f08804;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+button {
+  background-color: #f08804;
+  color: white;
+}
+
+a {
+  margin-right: 150px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* content Area */
+.contentbox {
+  height: 515px;
+  width: 320px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+#content {
+  height: 529px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: black;
+}

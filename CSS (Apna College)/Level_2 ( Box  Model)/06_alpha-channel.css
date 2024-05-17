@@ -1,0 +1,36 @@
+
+h1{
+    height: 75px;
+    width: 150px;
+    font-family: cursive;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgba(255, 0, 0, 0.75);
+}
+
+h2{
+    height: 100px;
+    width: 150px;
+    font-family: cursive;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgba(0, 255, 0, 0);
+}
+
+h3{
+    height: 50px;
+    width: 150px;
+    font-family: cursive;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgba(0, 255, 0, 0.50);
+}
+
+h4{
+    height: 50px;
+    width: 150px;
+    font-family: cursive;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgba(0, 0, 255, 1);
+}

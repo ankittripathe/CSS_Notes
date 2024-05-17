@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Level_3 [root em (rem)]</title>
+    <style>
+      #box1 {
+        height: 200px;
+        width: 200px;
+        background-color: orange;
+        font-size: 10px;
+      }
+
+      #box2 {
+        height: 100px;
+        background-color: skyblue;
+        margin-left: 10%;
+        font-size: 2rem; /* 16px *2 = 32px*/
+        width: 6rem; /*root elements body ke just badd wala means font size: 16px 16*6 = 96px*/
+      }
+    </style>
+  </head>
+  <body>
+    Topic:Rem(Root em)=> relative to font size of the root elements(root means
+    html)
+    <div id="box1">
+      box1-parent
+      <div id="box2">box2-child</div>
+    </div>
+  </body>
+</html>

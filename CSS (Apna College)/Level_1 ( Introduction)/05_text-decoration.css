@@ -1,0 +1,47 @@
+/* 
+   text-decoration: underline/ line-through/ overline/ wavy underline; 
+   text-decoration: none;
+ */
+h1 {
+  text-align: center;
+  color: salmon;
+}
+
+#h1 {
+  text-align: center;
+  text-decoration: overline;
+}
+
+#h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#h3 {
+  text-align: center;
+  text-decoration: line-through;
+}
+
+#h4 {
+  text-align: center;
+  text-decoration: wavy underline green;
+}
+
+#h5 {
+  text-align: center;
+  text-decoration: underline dotted;
+}
+
+#h6 {
+  text-align: center;
+  text-decoration: underline overline line-through;
+}
+
+#h7 {
+  text-align: center;
+  text-decoration: underline overline #3aff28;
+}
+
+a {
+  text-decoration: none;
+}

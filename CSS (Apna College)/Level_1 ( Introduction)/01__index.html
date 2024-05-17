@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Level_1 (CSS Selector priority)</title>
+    <!-- Internal CSS Tag-->
+    <style>
+      h1 {
+        color: green;
+      }
+    </style>
+    <!-- External CSS Tag -->
+    <link rel="stylesheet" href="01_style.css" />
+  </head>
+  <body>
+    <!-- Inline CSS Tag -->
+    <h1 style="color: red">Hello ji Kaise ho Sare</h1>
+    <!-- <h1 style="color: rgb(20, 238, 20);">Hello ji Kiase ho Sare</h1> -->
+
+    <h1>Hello ji kaise ho sare</h1>
+    <h1>I am Ankit Triapthi</h1>
+    <p>Ms Dhoni is my all time fabourite</p>
+    <button>Click here</button>
+    <hr />
+
+    <!-- Id selector -->
+    <h1 id="headingOne">Hello ji, This is headingOne</h1>
+    <h1 id="headingTwo">Hello je, This is headingTwo</h1>
+    <hr/>
+
+    <!-- class Selector -->
+    <h1 class="myclass">Hello jee, Hello jee</h1>
+
+    <p class="myclass">
+      My name is Ankit Tripathi.I am students of B.Tech final year
+    </p>
+
+    <!-- 
+      Notes: Selector priority
+       1. inline CSS have higher priority then internal & external when they have same feature applied.
+       2. last me jo placed hoga uski jada priority hogi external(link wala) ho ya internal(style wala)
+    -->
+  </body>
+</html>

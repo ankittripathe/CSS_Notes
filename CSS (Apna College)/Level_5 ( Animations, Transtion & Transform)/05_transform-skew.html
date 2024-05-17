@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 5 (transform:skew)</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        background-color: aquamarine;
+        border: 3px solid black;
+        position: absolute;
+        top: 120px;
+        left: 500px;
+        transition: all 2s ease-in;
+      }
+
+      div:hover {
+        transform: skew(90deg);
+        transform: skew(-45deg);
+        transform: skewX(30deg);
+        transform: skewY(45deg);
+        transform: skew(45deg);
+        transform: skew(-45deg);
+        transform: skew(30deg, 30deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>This is Skew</div>
+  </body>
+</html>

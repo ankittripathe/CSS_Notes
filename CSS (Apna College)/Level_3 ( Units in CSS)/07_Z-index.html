@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level_3 (z-index)</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 2px solid black;
+        display: inline-block;
+      }
+
+      #box1 {
+        /*z-index static pe work nhi krega.*/
+        position: static; 
+      }
+
+      #box2 {
+        position: relative;
+        top: 10px;
+        left: 25px;
+        z-index: 1;
+      }
+
+      #box3 {
+        position: absolute;
+        top: 200px;
+        left: 220px;
+        z-index: 14;
+      }
+
+      #box4 {
+        position: fixed;
+        top: 180px;
+        left: 300px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-index=> It decides the stack level of elements</h1>
+
+    <h3>
+      Overlapping elements with a larger z-index cover those with a smaller one.
+    </h3>
+
+    <ul>
+      <li>z-index: auto(o)</li>
+      <li>z-index: 1/ 2/ 3/...</li>
+      <li>z-index: -1/ -2/ -3/...</li>
+      <li>pahle wala(under ho jata hai) & badd wala[over(upar) aa jata hai]</li>
+    </ul>
+
+    <div id="box1" style="background-color: red">box1</div>
+    <div id="box2" style="background-color: green">box2</div>
+    <div id="box3" style="background-color: yellow">box3</div>
+    <div id="box4" style="background-color: aqua">box4</div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+div {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-color: pink;
+  border: 5px solid black;
+  border-radius: 15px;
+  border-radius: 50%;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-box (Flex-wrap)</title>
+    <style>
+      .box {
+        height: 50px;
+        width: 150px;
+        border: 2px solid black;
+      }
+
+      #box1 {
+        background-color: aqua;
+        height: 75px;
+      }
+
+      #box2 {
+        background-color: blue;
+        height: 100px;
+      }
+
+      #box3 {
+        background-color: green;
+        height: 75px;
+      }
+
+      #box4 {
+        background-color: yellow;
+      }
+
+      #box5 {
+        background-color: maroon;
+      }
+
+      #containers {
+        height: 600px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex-wrap: nowrap/ wrap/ wrap-reverse</h1>
+    <div id="containers">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+    </div>
+  </body>
+</html>

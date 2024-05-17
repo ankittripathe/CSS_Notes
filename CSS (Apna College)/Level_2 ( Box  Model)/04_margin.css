@@ -1,0 +1,37 @@
+div {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-color: pink;
+  border: 5px solid black;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  /*
+    margin Shorthand: margin-top | margin-right | margin-buttom | margin-left;
+    margin: 50px;   applied 25px in all 4 directimargin
+  */
+  margin: 50px;
+}
+
+
+/*    
+  margin-top:30px;
+  margin-right:20px;
+  margin-buttom:40px;
+  margin-left:10px;
+
+  margin Shorthand: margin-top | margin-right | margin-buttom | margin-left;
+  margin: 50px;   applied 50px in all 4 direction
+  
+  margin Shorthand: margin-top | margin-right | margin-buttom | margin-left;
+  margin: 30px 20px 40px 10px
+          
+  margin Shorthand: top | right-left | buttom |
+  margin: 40px 20px 30px;
+  
+  margin Shorthand: top-butttom | right-left 
+  margin: 30px 30px;
+*/

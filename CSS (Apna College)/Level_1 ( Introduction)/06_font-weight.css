@@ -1,0 +1,41 @@
+/* 
+   font-weight: normal/ bold/ bolder/ lighter;
+   font-weigt:100-900
+*/
+
+#h1 {
+  font-weight: 100;
+}
+
+#h2 {
+  font-weight: bolder;
+}
+
+#h3 {
+  font-weight: bold;
+}
+
+#h4 {
+  font-weight: 900;
+}
+
+#h5 {
+  font-weight: 600;
+}
+
+#h6 {
+  font-weight: 500;
+}
+
+#h7 {
+  font-weight: 400;
+}
+
+#h8 {
+  font-weight: normal;
+}
+
+#h9 {
+  font-weight: lighter;
+  color: green;
+}
