@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox(flex-basis)</title>
+    <style>
+      .containers {
+        height: 900px;
+        background-color: rgb(236, 236, 159);
+        border: 5px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        /* align-content: center; */
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid maroon;
+        margin: 2px;
+      }
+
+      #box1 {
+        background-color: aqua;
+        flex-basis: 500px;    /*Suru me hi Etna width set ho jaega display ke time */
+      }
+
+      #box2 {
+        background-color: orangered;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: brown;
+        flex-basis: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The flex-basis property specifies the initial length of a flex item.</h1>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+    </div>
+  </body>
+</html>

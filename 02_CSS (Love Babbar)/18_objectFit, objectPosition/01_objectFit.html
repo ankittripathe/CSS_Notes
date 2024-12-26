@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry (CSS Object Fit & Position)</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+            background-color: azure;
+        }
+
+        img{
+            height:400px ;
+            width: 400px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            /* object-position: top left; */
+            /* object-position: buttom left; */
+
+            object-position: 10px 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/msd.jpg" alt="">
+    </div>
+</body>
+</html>

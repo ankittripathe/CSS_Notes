@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_3 (padding-inline & padding block)</title>
+    <style>
+      h1 {
+        background-color: palevioletred;
+        /* padding-inline-start: 70px; */
+        /* padding-inline-end: 60px; */
+
+        /* applied on both end */
+        /* padding-inline: 100px;  */
+
+        padding-inline: 150px 50px;
+        /* 70px is start and 50px is end */
+      }
+
+
+      h2 {
+        background-color: lightgreen;
+        padding-block: 100px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      An element's padding-inline is the space from its border to its content in
+      the inline direction(x-axis), and it is a shorthand property for the following
+      properties: properties:
+      <li>padding-inline-start (left-side)</li>
+      <li>padding-inline-end (right-side)</li>
+      <li>
+        padding-inline: 10px 50px; padding at start is 10px padding at end is
+        50px
+      </li>
+      <li>padding-inline: 10px; padding at start and end is 10px</li>
+    </h1>
+
+    <h2>
+      An element's padding-block is the space from its border to its content in
+      the block direction(y-axis), and it is a shorthand property for the following
+      properties:
+      <li>padding-block-start (top)</li>
+      <li>padding-block-end (bottom)</li>
+      <li>padding-block(shorthand): start(top) | end(bottom)</li>
+      <li>
+        padding-block: 10px 50px; padding at start is 10px padding at end is
+        50px
+      </li>
+      <li>padding-block: 10px; padding at start and end is 10px</li>
+    </h2>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture_10 (Shadow inset)</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            padding: 5px;
+            /* box-shadow: -20px -10px orangered; */
+            box-shadow: inset 20px 10px red;
+        }
+
+        img{
+           margin-left: 40px;
+           box-shadow:8px 8px black;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        Specify a single box-shadow using:
+        <li>
+            Two, three, or four <length> values.
+        </li>
+
+        <li>
+            If only two values are given, they are interpreted as <offset-x> and <offset-y> values
+        <li>
+
+        <li>
+            If a third value is given, it is interpreted as a <blur-radius>
+        </li>
+
+        <li>
+            If a fourth value is given, it is interpreted as a <spread-radius>
+        </li>
+
+        <li>
+            Optionally, the inset keyword
+        </li>
+
+        <li>
+            Optionally, a <color> value
+        </li>
+
+        To specify multiple shadows, provide a comma-separated list of shadows.
+    </ul>
+
+    <div class="container">
+        <div class="box">
+            <img src="images/emart.PNG">
+            <h2>Shadow with inset property</h2>
+            <p>
+               inset=> Optional. Changes the shadow from an outer shadow (outset) to an inner shadow
+            </p>
+        </div>
+    </div>
+</body>
+</html>

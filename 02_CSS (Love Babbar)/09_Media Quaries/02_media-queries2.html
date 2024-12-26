@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_9 (Media Quaries)</title>
+    <style>
+      body {
+        background-color: red;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .box {
+        height: 12rem;
+        width: 12rem;
+        background-color: blue;
+        margin: 5px;
+        padding: 5px;
+      }
+
+      @media only screen and (max-width: 455px) {
+        body {
+          background-color: lightgreen;
+        }
+        .container {
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (orientation: landscape) {
+        body {
+          /* background-color: palevioletred; */
+          border: 3px solid black;
+        }
+      }
+
+      /* 
+      landscape=> width jada ho (jaha chauda hoo)
+      portrait=> height jaha ho (jada lamba ho)
+    */
+    </style>
+  </head>
+  <body>
+    <div>I am red body guy!</div>
+
+    <div class="container">
+      <div class="box">box_1</div>
+      <div class="box">box_2</div>
+      <div class="box">box_3</div>
+    </div>
+  </body>
+</html>

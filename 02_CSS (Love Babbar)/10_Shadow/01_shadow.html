@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10(Shadow)</title>
+    <style>
+      .container {
+        background-color: darkcyan;
+        height: 600px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .box {
+        background-color: aquamarine;
+        width: 350px;
+        height: 350px;
+        border: 1px solid brown;
+        margin: 5px;
+        padding: 5px;
+        /* box-shadow: x-offset (me color move krega shadow banaega)| y-offset (me color move krega shadow banaega)*/
+        /* box-shadow: -10px -20px black; */
+        box-shadow: 20px 10px orangered;
+
+        /* To specify multiple shadows, provide a comma-separated list of shadows. */
+        box-shadow: 20px 10px orangered, 40px 20px green;
+      }
+
+      img {
+        margin-left: 40px;
+        margin-top: 10px;
+        box-shadow: -8px -8px black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>
+      The box-shadow CSS property adds shadow effects around an element's frame.
+      <br />
+      A box shadow is described by X and Y offsets relative to the element, blur
+      and spread radius, and color.
+    </h2>
+
+    <ul>
+      <li>
+        h-offset / x-offset => The horizontal offset of the shadow. A positive
+        value puts the shadow on the right side of the box, a negative value
+        puts the shadow on the left side of the box
+      </li>
+      <li>
+        v-offset / y-offset => The vertical offset of the shadow. A positive
+        value puts the shadow below the box, a negative value puts the shadow
+        above the box
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="box">
+        <img src="images/emart.PNG" />
+        <h2>Shadow property</h2>
+        <p>box-shadow: (x-offset/h-offset) | (y-offset/v-offset) | color</p>
+      </div>
+    </div>
+  </body>
+</html>

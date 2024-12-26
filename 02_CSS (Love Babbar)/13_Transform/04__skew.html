@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma (Transform Skew)</title>
+    <style>
+      .container {
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgreen;
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color: beige;
+        border: 2px solid black;
+        transition: all 3s linear 1s;
+      }
+
+      .box:hover {
+        transform: skewX(30deg);
+        transform: skewY(45deg);
+        transform: skew(45deg);
+        transform: skew(-45deg);
+        transform: skew(30deg, 30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes -->
+    Note:Skew me Tilt kr jaega like (khichna dono taraf se)
+    <h3>
+      CSS transform property you can use the following 2D transformation
+      methods:
+    </h3>
+
+    <ul>
+      <li>
+        The skewX() method skews an element along the X-axis by the given angle.
+      </li>
+
+      <li>
+        The skewY() method skews an element along the Y-axis by the given angle.
+      </li>
+
+      <li>
+        The skew() method skews an element along the X and Y-axis by the given
+        angles.
+      </li>
+    </ul>
+
+    <!-- discussion -->
+    <div class="container">
+      <div class="box">
+        <h1>Sigma Web Dev(By harry)</h1>
+      </div>
+    </div>
+  </body>
+</html>

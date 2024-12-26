@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma (2D Transform)</title>
+    <style>
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: orange;
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color: beige;
+        border: 2px solid black;
+        transition: all 3s linear 1s;
+      }
+
+      .box:hover {
+        transform: scaleX(2);    /* increase size 2-times on X-axis */
+        transform: scaleY(3);    /* increase size 2-times on y-axis */
+        transform: scale(2, 3);  /* increase size 2-times on x-axis & 3-times on y-axis */
+        transform: scale(2);     /* increase size 2-times on x-axis & 2-times on y-axis */
+        transform: scaleX(2), scaleY(3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes -->
+    <h3>
+      CSS transform property you can use the following 2D transformation
+      methods:
+    </h3>
+    <ul>
+      <li>
+        scaleX() => The scaleX() method increases or decreases the width of an
+        element.
+      </li>
+      <li>
+        scaleY() => The scaleY() method increases or decreases the height of an
+        element.
+      </li>
+      <li>
+        scale()=> The scale() method increases or decreases the size of an
+        element (according to the parameters given for the width and height).
+        <br />
+        This is shorthand of scaleX() and scaleY()
+      </li>
+    </ul>
+
+    <!-- discussion -->
+    <div class="container">
+      <div class="box">
+        <h1>Sigma Web Dev(By harry)</h1>
+      </div>
+    </div>
+  </body>
+</html>

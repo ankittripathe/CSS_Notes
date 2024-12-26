@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_12 (transations by Love-Babbar)</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: darkcyan;
+        border: 2px solid black;
+        /*
+         transition-property: all;
+         transition-duration: 4s;
+         transition-delay: 1s;
+         transition-timing-function: linear;
+        */
+
+        /*
+         transition shorthand: transition-property | transition-duration | transition-timing-function| transition-delay | transition-behavior.
+        */
+
+        /*Shorthand notation */
+        transition: all 3s ease-in 1s;
+      }
+
+      .box:hover {
+        width: 500px;
+        height: 400px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes -->
+    <h4>
+      CSS transitions allows you to change property values smoothly, over a
+      given duration.
+      <br />
+      Mouse over the element below to see a CSS transition effect:
+    </h4>
+    <ul>
+      <li>transition-property</li>
+      <li>transition-duration</li>
+      <li>transition-delay</li>
+      <li>transition-timing-function</li>
+
+      <ul>
+        <li>transition-timing-function: linear;</li>
+        <li>transition-timing-function: ease-in;</li>
+        <li>transition-timing-function: ease-out;</li>
+        <li>transition-timing-function: ease-in-out;</li>
+        <li>
+          transition-timing-function: cubic-bezier(0.22, -0.04, 0.74, 0.53);
+        </li>
+      </ul>
+    </ul>
+    <h5>
+      transition shorthand: transition-property | transition-duration |
+      transition-timing-function| transition-delay | transition-behavior.
+    </h5>
+
+    <!-- discussion -->
+    <div class="box"></div>
+  </body>
+</html>

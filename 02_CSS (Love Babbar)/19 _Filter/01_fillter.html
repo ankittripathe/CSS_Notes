@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harry (CSS Filters)</title>
+    <style>
+        img{
+            margin: 19px;
+        }
+
+        #img_1{
+            filter: blur(5px);  
+        }
+
+        #img_2{
+            filter: brightness(130%) contrast(200%);
+        }
+
+        #img_3{
+            /* filter: grayscale(100%); */
+            filter: sepia(80%);
+            /* filter: invert(10); */
+            /* filter: opacity(0.5); */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="img_1" src="images/msd_1.jpeg" alt="" height="450px" width="350px">
+        <img id="img_2" src="images/msd_2.jpeg" alt="" height="450px" width="350px">
+        <img id="img_3" src="images/msd_3.jpeg" alt="" height="450px" width="350px"> 
+    </div>
+</body>
+</html>

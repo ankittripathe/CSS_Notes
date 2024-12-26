@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anij bhaiya (grid Template Area)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        border: 2px solid green;
+        padding: 12px;
+      }
+
+      .conatiner {
+        height: 610px;
+        border: 3px solid red;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 10px;
+       
+        grid-template-areas:
+          "header header header header"
+          "sidebar main main main"
+          "sidebar main main main"
+          "sidebar main main main"
+          "footer footer footer footer";
+      }
+
+      #box1 {
+        background-color: lightgreen;
+        grid-area: header;
+      }
+
+      #box2 {
+        background-color: aqua;  
+        grid-area: sidebar;
+      }
+
+      #box3 {
+        background-color: bisque;
+        grid-area: main;
+      }
+
+      #box4 {
+        background-color: rgb(131, 46, 81);
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+    </div>
+  </body>
+</html>

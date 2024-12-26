@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma (2D Transform)</title>
+    <style>
+      .container {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color: beige;
+        border: 2px solid black;
+        transition: all 3s linear 1s;
+      }
+
+      .box:hover {
+        transform: translateX(50px);
+        transform: translateX(-50px);
+        transform: translateX(20%);
+        transform: translateY(30px);
+        transform: translateY(-30px);
+        transform: translateY(55%);
+        transform: translate(30px, 50px);
+        transform: translate(-30px, -50px);
+        /* transform: translate(-20%, -50%); */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes -->
+    <h3>CSS transform property you can use the following 2D transformation methods:</h3>
+    <ul>
+       <li>translate()</li>
+       <li>rotate()</li>
+       <li>scaleX()</li>
+       <li>scaleY()</li>
+       <li>scale()</li>
+       <li>skewX()</li>
+       <li>skewY()</li>
+       <li>skew()</li>
+       <li>matrix()</li>
+    </ul>
+    
+
+    <ul>
+        <li>
+            The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+        </li>
+        <li>
+            The following example moves the <div> element 50 pixels to the right, and 100 pixels down from its current position:
+        </li>
+    </ul>
+
+    <!-- discussion -->
+    <div class="container">
+      <div class="box">
+        <h1>Sigma Web Dev(By harry)</h1>
+      </div>
+    </div>
+  </body>
+</html>

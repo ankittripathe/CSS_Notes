@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox(align-items & align-content)</title>
+    <style>
+        .containers {
+            height: 500px;
+            background-color: rgb(236, 236, 159);
+            border: 5px solid black;
+            /* margin: 2px; */
+            /* padding: 2px; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            align-content: center;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid maroon;
+            /* margin: 2px; */
+            /* padding: 50px; */
+        }
+
+        #box1 {
+            background-color: aqua;
+            /* order: 5; */
+            flex-shrink: 4;
+        }
+
+        #box2 {
+            background-color: orangered;
+            /* order:-3; */
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: brown;
+        }
+
+        #box5 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Notes align content kab use kiya jata hai jab hamare pass multiple line ho aur wrap ho. 
+    -->
+    <h1>
+        align-content =>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+    </h1>
+
+    <div class="containers">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <div class="box" id="box5">E</div>
+
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <div class="box" id="box5">E</div>
+    </div>
+</body>
+
+</html>

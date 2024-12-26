@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_9 (Media Quaries)</title>
+    <style>
+      .box {
+        background-color: salmon;
+        height: 400px;
+        width: 600px;
+        border: 3px solid black;
+      }
+
+      /* kamse kam Etna width ho tab E color apply hoga =>if the condition is true. */
+      @media (min-width: 500px) {
+        .box {
+          background-color: blue;
+        }
+      }
+
+      /* Esse jada width na ho tab E color Apply hoga. */
+      @media (max-width: 250px) {
+        .box {
+          background-color: orangered;
+        }
+      }
+
+      /* E dono condtion true huwa tab Apply hoga. */
+      @media (min-width: 300px) and (max-width: 500px) {
+        .box {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Media query is a CSS technique introduced in CSS3.
+    </h1>
+
+    <h3>
+      Media queries => Allow you to apply CSS styles depending on a device's
+      media type (such as print vs. screen) or other features or characteristics
+      such as screen resolution or orientation, aspect ratio, browser viewport
+      width or height, user preferences such as preferring reduced motion, data
+      usage, or transparency.
+    </h3>
+
+    <!-- 
+      Media queries can be used to check many things, such as: width and height
+      of the viewport orientation of the viewport (landscape or portrait)
+      resolution.
+    
+      Using media queries are a popular technique for delivering a tailored
+      style sheet to desktops, laptops, tablets, and mobile phones (such as
+      iPhone and Android phones).
+     -->
+
+    <!-- 
+          CSS Media Types
+       Value	       Description
+    (1).all	        (1). Used for all media type devices
+    (2).print	      (2). Used for print preview mode
+    (3).screen	    (3). Used for computer screens, tablets, smart-phones etc.
+     -->
+
+    <!-- 
+         CSS Common Media Features
+        Value	            Description
+    (1).orientation	     (1).Orientation of the viewport. Landscape or portrait
+    (2).max-height	     (2).Maximum height of the viewport
+    (3).min-height	     (3).Minimum height of the viewport
+    (4).height	         (4).Height of the viewport (including scrollbar)
+    (5).max-width	       (5).Maximum width of the viewport
+    (6).min-width	       (6).Minimum width of the viewport
+    (7).width	           (7).Width of the viewport (including scrollbar)
+     -->
+
+    <!-- 
+     Media Query Syntax:
+     A media query consists of a media type and can contain one or more media features,
+     which resolve to either true or false.
+
+    @media not|only media type and (media feature) and (media feature) {
+          // CSS-Code;
+    }
+
+      Meaning of the not, only, and and keywords:
+    not: This keyword inverts the meaning of an entire media query.
+    only: This keyword prevents older browsers that do not support media queries from applying the     specified styles. It has no effect on modern browsers.
+    and: This keyword combines a media type and one or more media features.
+    -->
+
+    <div class="box">Media_Quaries</div>
+  </body>
+</html>

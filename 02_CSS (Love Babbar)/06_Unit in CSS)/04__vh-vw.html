@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit in CSS(vh(viewport-height) & vw(viewport-width))</title>
+    <style>
+      .containers {
+        border: 3px solid orangered;
+        background-color: lightblue;
+        height: 100vh; /* broswer ka 100% height */
+        width: 50vw; /* broswer ka 50% width */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>vh:- Relative to 1% of the height of the viewport*</h1>
+    <p>
+      For example, if the viewport height is 1000 pixels, then 1vh would be
+      equal to 10 pixels (since 1% of 1000 is 10).
+     
+    </p>
+
+    <h1>vw:- Relative to 1% of the width of the viewport*</h1>
+    <p>
+      vw: This unit represents 1% of the viewport width. Similarly, if the
+      viewport width is 1000 pixels, then 1vw would be equal to 10 pixels
+    </p>
+
+    <div class="containers">Topic: vh & vw</div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma (2D Transform)</title>
+    <style>
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: orangered;
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color: beige;
+        border: 2px solid black;
+        transition: all 3s linear 1s;
+      }
+
+      .box:hover {
+        transform: rotateX(30deg);
+        transform: rotateX(-30deg);
+        transform: rotateY(20deg);
+        transform: rotateY(-20deg);
+        transform: rotateZ(40deg);
+        transform: rotate(-45deg);
+        transform: rotate(45deg);
+        transform: rotate(45deg, 50deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes -->
+    <h3>CSS transform property you can use the following 2D transformation methods:</h3>
+    <ul>
+       <li>translate()</li>
+       <li>rotate()</li>
+       <li>scaleX()</li>
+       <li>scaleY()</li>
+       <li>scale()</li>
+       <li>skewX()</li>
+       <li>skewY()</li>
+       <li>skew()</li>
+       <li>matrix()</li>
+    </ul>
+
+    <ol>
+        <li>
+          The rotate() method rotates an element clockwise or counter-clockwise according to a given degree
+        </li>
+        <li>
+            The following example rotates the <div> element clockwise with 45 degrees:
+        </li>
+    </ol>
+  
+    <!-- discussion -->
+    <div class="container">
+      <div class="box">
+        <h1>Sigma Web Dev(By harry)</h1>
+      </div>
+    </div>
+  </body>
+</html>

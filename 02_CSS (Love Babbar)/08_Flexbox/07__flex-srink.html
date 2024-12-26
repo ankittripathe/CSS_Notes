@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (flex-shrink)</title>
+    <style>
+      .containers {
+        height: 700px;
+        background-color: rgb(236, 236, 159);
+        border: 3px solid black;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+        align-items: start;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid maroon;
+        margin: 2px;
+      }
+
+      #box1 {
+        background-color: aqua;
+        flex-shrink: 4;
+      }
+
+      #box2 {
+        background-color: orangered;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+
+      #box5 {
+        background-color: green;
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      The flex item properties are:
+      <li>
+        flex-shrink => The flex-shrink property specifies how much a flex item
+        will shrink relative to the rest of the flex items.
+      </li>
+    </ul>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

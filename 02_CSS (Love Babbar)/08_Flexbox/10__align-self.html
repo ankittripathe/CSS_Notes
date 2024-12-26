@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (align-self)</title>
+    <style>
+      .containers {
+        height: 700px;
+        background-color: rgb(236, 236, 159);
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid maroon;
+        margin: 2px;
+      }
+
+      /* Notes:
+      align-self:start / flex-start
+      align-self:end / flex-end
+      align-self:center;
+       */
+
+      #box1 {
+        background-color: aqua;
+        align-self: flex-end;
+      }
+
+      #box2 {
+        background-color: orangered;
+        align-self: center;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+
+      #box5 {
+        background-color:limegreen;
+        align-self: center;
+      }
+
+      #box6 {
+        background-color:salmon;
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- Notes:
+       particular items ko align kr skte hai align-self se (selected Elememts ko) -->
+    <ul>
+        align-self => The align-self property specifies the alignment for the
+        selected item inside the flexible container.
+        <br><br>
+        The align-self property overrides the default alignment set by the container's align-items property.
+      </li>
+    </ul>
+    <div class="containers">
+      <div class="box" id="box1">Box A</div>
+      <div class="box" id="box2">Box B</div>
+      <div class="box" id="box3">Box C</div>
+      <div class="box" id="box4">Box D</div>
+      <div class="box" id="box5">Box E</div>
+      <div class="box" id="box6">Box F</div>
+    </div>
+  </body>
+</html>

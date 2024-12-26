@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>By harry (CSS varibale)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* root is global varabile kahi vi use kr skte hai */
+      :root {
+        --primaryColor: rgb(89, 89, 231);
+        --secondaryColor: yellow;
+        /* --ThirdColor:rgb(101, 64, 128); */
+        --primarytextColor: red;
+        --defaultPadding: 30px;
+        --defMargin: 20px;
+        --defOpacity: 0.3;
+      }
+
+      .nav {
+        background-color: lightgreen;
+        background-color: var(--primaryColor);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      ul li {
+        list-style: none;
+        padding: var(--defaultPadding);
+        margin: var(--defMargin);
+        border: 2px solid var(--secondaryColor);
+      }
+
+      ul li:nth-child(1) {
+        /*yaha overwrite kr diya gaya hai toh overwrite  walaa use hoga*/
+        --primaryColor: rgb(224, 119, 21);
+        background-color: var(--primaryColor);
+        color: var(--ThirdColor);
+        opacity: var(--defOpacity);
+      }
+
+      ul li:nth-child(2) {
+        /* If varaible is not found then we can give fallback (Ek alag de de denge) agar variable nhi mila toh fallback walaa color use kr lega. fallback lagane ke liye variable ke badd comma se jo dena ho de skte hai. */
+        background-color: var(--ThirdColor, aqua);
+        /*fallback concept agar varibale wala nhi found huwa toh aqua color le lega. */
+      }
+
+      .container {
+        background-color: lightcoral;
+        background-color: var(
+          --secondaryColor
+        ); /*root wala color use ho jaega*/
+        color: var(--primarytextColor);
+        padding: var(--defaultPadding);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolor esse
+      cumque, sunt dolores cupiditate et rem officiis qui maxime, sequi commodi
+      amet nobis quos nemo molestias deleniti, vel natus optio mollitia est
+      adipisci. Deserunt ea harum nostrum. Voluptas facilis deserunt alias
+      repudiandae aliquid molestiae?
+    </div>
+  </body>
+</html>

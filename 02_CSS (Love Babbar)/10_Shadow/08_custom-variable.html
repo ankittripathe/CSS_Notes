@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10 (custom variable create)</title>
+    <style>
+      /******* Apply for all inside box or conatiners we need to create root *****/
+      :root{
+        --primary-color:orangered;
+        --custom-width: 340px;
+        --secondary-color:lightgreen;
+      }
+      
+
+      .container {
+        background-color:var(--secondary-color);
+        height: 98vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color:pink;
+        width: var(--custom-width);
+        border: 1px solid var(--primary-color);
+        padding: 5px;
+        box-shadow: 10px 15px 6px blue
+      }
+
+      img {
+        margin-left: 40px;
+        box-shadow: 8px 8px 3px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="images/emart.PNG" />
+        <h2>Wlcm to Emart</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          repellendus rerum vel tempore laudantium eos cumque quibusdam ullam
+          similique culpa?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

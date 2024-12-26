@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition(Anuj bahiya)</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: teal;
+        margin: 100px auto;
+        transition-property: border-radius, transform, background-color;
+        /*
+         transition-property: margin-left, height, background-color; etc jispe lagan ho uska name de skte hai nhi toh all vi kr skte hai
+         */
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        /* transition-timing-function: linear; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: cubic-bezier(0.22, -0.04, 0.74, 0.53); */
+        transition-delay: 0.3s;
+      }
+
+      .box:hover {
+        background-color: salmon;
+        border-radius: 50%;
+        transform: rotate(180deg);
+      }
+
+      /* for ul */
+      .list {
+        display: flex;
+        gap: 100px;
+        list-style: none;
+        margin-left: 100px;
+      }
+
+      .items {
+        font-size: 1.7rem;
+        padding: 8px 15px;
+        transition: 0.3s ease-in;
+      }
+
+      .items:hover {
+        cursor: pointer;
+        background-color:black;
+        color: white;
+        border-radius: 6px;
+        transform: translateY(-10px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- For Box -->
+    <div class="box"></div>
+
+    <!-- For ul -->
+    <ul class="list">
+        <li class="items">Home</li>
+        <li class="items">Product</li>
+        <li class="items">Contact</li>
+        <li class="items">Add to Bag</li>
+        <li class="items">SignIn</li>
+      </ul>
+  </body>
+</html>

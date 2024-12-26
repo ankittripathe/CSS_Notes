@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10(Shadow with spread property)</title>
+    <style>
+      .container {
+        background-color: lightcyan;
+        height: 550px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: aquamarine;
+        width: 330px;
+        height: 330px;
+        border: 1px solid brown;
+        padding: 5px;
+        /* shadow with blur & spread property */
+        /* box-shadow: x-offset | y-offset | blur | spread | color */
+        box-shadow: 15px 25px 10px 22px orangered;
+        /* box-shadow:15px 25px 10px -30px brown; */
+      }
+
+      img {
+        margin-left: 40px;
+        box-shadow: 8px 8px 4px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Spread radius => A positive value increases the size of the shadow, a
+      negative value decreases the size of the shadow.
+    </h3>
+
+    <div class="container">
+      <div class="box">
+        <img src="images/emart.PNG" />
+        <h2>Shadow with spread property</h2>
+        <p>box-shadow: x-offset | y-offset | blur | spread | color</p>
+      </div>
+    </div>
+  </body>
+</html>

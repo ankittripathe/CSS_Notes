@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_11 (Animations)</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      .conatiner {
+        height: 100vh;
+        width: 100vw;
+        background-color: palegoldenrod;
+        border: 2px solid black;
+      }
+
+      .box1 {
+        height: 80px;
+        width: 350px;
+        background-color: blue;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: 10px;
+        position: relative;
+        animation-name: rightmoment; /* koie vi name de skte hai*/
+        /* animation-duration: 3s; */
+        /* animation-iteration-count: 1; */
+        /* animation-delay: 2s; */
+        /* transition-timing-function: linear; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: both; */
+
+        /* @keyframes duration | easing-function | delay |
+           iteration-count | direction | fill-mode | play-state | name
+        */
+        animation: 3s linear 1s infinite alternate none running rightmoment;
+      }
+
+      @keyframes rightmoment {
+        from {
+          top: 0;
+          left: 0;
+          background-color: blue;
+        }
+
+        to {
+          top: 0;
+          left: 980px;
+          background-color: orangered;
+        }
+      }
+
+      .box2 {
+        height: 80px;
+        width: 350px;
+        background-color: rgb(85, 207, 81);
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: 10px;
+        position: relative;
+        animation: 5s linear 1s infinite alternate none running leftmoment;
+      }
+
+      @keyframes leftmoment {
+        from {
+          top: 410px;
+          left: 980px;
+        }
+
+        to {
+          top: 410px;
+          left: 0px;
+        }
+      }
+
+      .circle {
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+        border-radius: 50%;
+        border: 3px solid yellow;
+        margin: 10px;
+        position: relative;
+        top: 0%;
+        left: 30%;
+        /* @keyframes duration | easing-function | delay |
+         iteration-count | direction | fill-mode | play-state | name */
+        /* animation: 10s ease-in-out 0s infinite alternate-reverse none running circlemoment; */
+      }
+
+      @keyframes circlemoment {
+        0% {
+          top: 1%;
+          left: 5%;
+        }
+
+        30% {
+          top: 5%;
+          left: 90%;
+        }
+
+        60% {
+          top: 90%;
+          left: 10%;
+        }
+
+        100% {
+          top: 40%;
+          left: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

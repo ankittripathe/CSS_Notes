@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (flex-wrap)</title>
+    <style>
+      .containers {
+        border: 3px solid black;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap;
+
+        /* shorthand for flex direction $ flex wrap */
+        /* flex-flow: row wrap; */
+        /* flex-flow: row nowrap; */
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid orangered;
+        margin: 2px;
+        padding: 20px;
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: orangered;
+      }
+      #box3 {
+        background-color: blue;
+      }
+      #box4 {
+        background-color: brown;
+      }
+      #box5 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      flex-wrap:nowrap => value specifies that the flex items will not wrap
+      (this is default).
+    </h2>
+    <h2>
+      flex-wrap:wrap => property specifies whether the flex items should wrap or
+      not.
+    </h2>
+    <h2>
+      flex-wrap:wrap-reverse => value specifies that the flexible items will wrap if
+      necessary, in reverse order:
+    </h2>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

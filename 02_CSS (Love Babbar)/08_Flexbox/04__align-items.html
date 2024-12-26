@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (align-items)</title>
+    <style>
+      .containers {
+        height: 450px;
+        background-color: rgb(236, 236, 159);
+        border: 3px solid black;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-content: start; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        align-items: center;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid maroon;
+        margin: 2px;
+        padding: 10px;
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: orangered;
+      }
+      #box3 {
+        background-color: blue;
+      }
+      #box4 {
+        background-color: brown;
+      }
+      #box5 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notes:
+    align-items: cross axis (vertically) (top to buttom) -->
+    <h2>
+      flex container with both the justify-content and the align-items
+      properties set to center will align the item(s) in the center (in both
+      axis).
+    </h2>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

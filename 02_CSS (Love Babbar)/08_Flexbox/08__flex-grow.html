@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox (flex-grow)</title>
+    <style>
+        .containers {
+            height: 1200px;
+            background-color: rgb(236, 236, 159);
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid maroon;
+        }
+
+        #box1 {
+            background-color: aqua;
+            flex-grow: 1;
+        }
+
+        #box2 {
+            background-color: orangered;
+            flex-grow: 6;
+        }
+
+        #box3 {
+            background-color: blue;
+            flex-grow: 1;
+        }
+
+        #box4 {
+            background-color: brown;
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+    </h1>
+
+    <div class="containers">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div>
+</body>
+</html>

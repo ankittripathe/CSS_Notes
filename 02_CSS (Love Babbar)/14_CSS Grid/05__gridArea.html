@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Anuj bahiya(CSS Grid child Items (grid-area => shorthand property of
+      grid-row & grid-column):)
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        border: 2px solid green;
+        padding: 12px;
+      }
+
+      .conatiner {
+        height: 600px;
+        border: 3px solid red;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-columns: 200px 200px 200px;
+      }
+
+      #box1 {
+        background-color: rgb(108, 136, 136);
+
+        /* grid-column-start: 1;
+           grid-column-end: 4;
+         */
+
+        /* Grid column Shorthand */
+        /* grid-column: 1/4; */
+
+        /* Grid Row shorthand property */
+        /* grid-row: 1/5;
+           grid-row: 1/span 4;
+         */
+
+        /* row-start /column-start /  row-end /column-end */
+        grid-area: 2/2 / 4/6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+      <div class="box" id="box5">box5</div>
+      <div class="box" id="box6">box6</div>
+      <div class="box" id="box7">box7</div>
+      <div class="box" id="box8">box8</div>
+      <div class="box" id="box9">box9</div>
+      <div class="box" id="box10">box10</div>
+    </div>
+  </body>
+</html>

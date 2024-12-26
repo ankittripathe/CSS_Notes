@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10(text shadow mutilple color)</title>
+    <style>
+      :root {
+        --primary-color: lightgreen;
+        --sec-color:white;
+      }
+
+      .container {
+        height: 97vh;
+        background-color: var(--primary-color);
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color:var(--sec-color);
+        width: 21rem;
+        border: 1px solid black;
+        padding: 5px;
+        box-shadow: 15px 10px 6px brown;
+      }
+
+      img {
+        margin-left: 40px;
+        box-shadow: 10px 12px 7px blue;
+      }
+
+      #head1 {
+        /* text-shadow: 12px 13px 2px orangered; */
+        /* multiple text add  shorthand  */
+        text-shadow: 5px 6px 2px black, 6px 7px 2px blue, 8px 9px 1px orangered;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="/Image/emart.PNG" />
+        <h2 id="head1">Wlcm to Emart</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          repellendus rerum vel tempore laudantium eos cumque quibusdam ullam
+          similique culpa?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

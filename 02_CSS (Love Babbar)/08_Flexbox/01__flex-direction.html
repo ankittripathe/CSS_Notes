@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox(flex direction)</title>
+    <style>
+      .flex-containers {
+        background-color: rgb(236, 236, 159);
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 3px solid palevioletred;
+        margin: 2px;
+        padding: 20px;       
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+
+      #box2 {
+        background-color: orangered;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+
+      #box5 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Flexbox=> It is one dimensional layout for arranging items in rows &
+      columns
+    </h1>
+    <h2>main-axes(horizental => x-axis) & cross-axes(vertically => Y-axis)</h2>
+    <ul>
+      <h1>flexbox direction</h1>
+      <li>
+        flex-direction: row; (default) [main axis = row (from left to rigt) i.e
+        => horizentally  & cross axis (top to buttom) i.e => vertically]
+      </li>
+      <li>
+        flex-direction: row-reverse; [main axis = row (from right to left) i.e
+        => horizentally]
+      </li>
+      <li>
+        flex-direction: column; [main axis = column (from Top to bottom) i.e =>
+        vertically]
+      </li>
+      <li>
+        flex-direction: column-reverse; [main axis = column (from bottom to Top)
+        i.e => vertically]
+      </li>
+    </ul>
+
+    <div class="flex-containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

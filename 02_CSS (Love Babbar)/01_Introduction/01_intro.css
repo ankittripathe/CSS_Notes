@@ -1,0 +1,11 @@
+/* This is External CSS */
+p{
+    background-color: red;
+    color:white;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color:green;
+}

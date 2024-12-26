@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clear in CSS</title>
+    <style>
+      #img1 {
+        height: 200px;
+        width: 200px;
+        float: right;
+      }
+
+      #img2 {
+        height: 200px;
+        width: 200px;
+        float: right;
+        clear: right;
+      }
+
+      p {
+        font-family: cursive;
+        overflow: hidden; /*matlab photo ke chod ke content aaega*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Topic: Clear in cross</h1>
+    <div class="containers">
+      <img id="img1" src="images/me2.jpg" alt="" />
+      <img id="img2" src="images/msd_4.jpg" alt="" />
+    </div>
+
+    <ul>
+      When we use the float property, and we want the next element below (not on
+      right or left), we will have to use the clear property.
+      <li>
+        The clear property specifies what should happen with the element that is
+        next to a floating element.
+      </li>
+      <li>The clear property can have one of the following values:</li>
+      <li>
+        none - The element is not pushed below left or right floated elements.
+        This is default
+      </li>
+      <li>left - The element is pushed below left floated elements</li>
+      <li>right - The element is pushed below right floated elements</li>
+      <li>
+        both - The element is pushed below both left and right floated elements
+      </li>
+      <li>inherit - The element inherits the clear value from its parent</li>
+    </ul>
+  </body>
+</html>

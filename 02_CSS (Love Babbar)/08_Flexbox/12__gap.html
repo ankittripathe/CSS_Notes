@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (gap)</title>
+    <style>
+      .containers {
+        height: 500px;
+        width: 60vw;
+        background-color: grey;
+        border: 3px solid black;
+        display: flex;
+        justify-content: start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;    
+        /* row-gap: 30px; */
+        /* column-gap: 20px; */
+        /* shorthand gap: row-gap |column-gap; */
+        /* parent wale me ho sata hoga uska gap nhi dikhega bas child me gap show krega */
+      }
+
+      .box {
+        height: 70px;
+        width: 70px;
+        border: 2px solid;
+      }
+
+      #box1 {
+        background-color: violet;
+      }
+
+      #box2 {
+        background-color: aqua;
+      }
+
+      #box3 {
+        background-color: blue;
+      }
+
+      #box4 {
+        background-color: powderblue;
+      }
+
+      #box5 {
+        background-color: sandybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Shorthand
+      <br />
+      gap: row-gap |column-gap;
+    </h1>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+      <div class="box" id="box5">E</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

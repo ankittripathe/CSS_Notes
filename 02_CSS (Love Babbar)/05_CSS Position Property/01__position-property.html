@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture_05 (Position property in CSS)</title>
+    <style>
+        /* body{
+            height: 1000px;
+        } */
+
+        .container{
+            height: 400px;
+            width: 350px;
+            background-color: lightgreen;
+            margin: 30px 0px 300px 500px;
+        }
+
+
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+
+
+        .yellow{
+            background-color: yellow;
+            position: relative;
+            top: 50px;
+            left: -50px;
+        }
+
+
+        .orange{
+            background-color: orange;
+            position: absolute;
+            top: 0px;
+            /* left: 30px; */
+            /* bottom: 0px; */
+            /* right:20px; */
+         }
+
+
+        .blue{
+            background-color: blue;
+            position: sticky;
+        }
+
+
+        .purple{
+            background-color: purple;
+            position: fixed;
+            bottom: 50px;
+            right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+    </h1>
+
+    <div class="container">
+        <div class="box yellow">relative</div>
+        <div class="box orange">absolute</div>
+        <div class="box blue">sticky</div>
+        <div class="box purple">Fixed</div>
+    </div>
+
+  <ul>
+      <li>
+        static:-default value.Elements render in order, as they appear in the document flow.
+        <br>
+        Static:-default position (The top, right, bottom, left, & z-index properties have no effect).
+    <li>
+
+    <li>
+        The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+        <br>
+        relative:-element is relative to itself.(The top, right, bottom, left, and z-index will work )
+    </li>
+
+    <li>
+      absolute Element: is positioned relative to its first positioned (not static) ancestor element(parent wala)
+       <br>
+       absolute:- positioned relative to its closest position ancestor(but closest ancestor(static na ho) aur kuch vi ho relative, fixed etc tab hi apply hoga).
+       <p>
+        (removed from flow => apply hote hi work krne lagea aur sayad gayab ho jaey aur dikhe na jab tak koie property na apply ho)
+      </p>
+       <p>
+        for example: ancestor (parent tag bahar wale Tag)
+         <h1>
+           <a href=""></a>
+          </h1>
+           here h1 in ancestor(parent) of a tag
+       </p>
+     </li>
+     <li>
+        fixed: The element is positioned relative to the browser window 
+        <br>
+        fixed:-positioned relative to browser.(removed from flow)
+     </li>
+
+     <li>
+        sticky:-positioned based on user's scrool position.
+    </li>
+</ul>
+</body>
+</html>

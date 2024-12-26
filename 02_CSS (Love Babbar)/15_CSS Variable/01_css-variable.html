@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_15(Aunj bhaiya)(CSS Variable for toggle)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-text-color: #f77676;
+        --secondary-text-color: #444;
+        --card-background-color: #6dd332;
+        --background-color: #2c2fd4;
+        --default-margin: 30px;
+      }
+
+      /* .dark {
+        --primary-text-color: #fff;
+        --secondary-text-color: #ddd;
+        --card-background-color: #333;
+        --background-color: #111;
+      } */
+
+      .container {
+        min-height: 100vh;
+        padding: 40px;
+        background-color: var(--background-color);
+      }
+
+      p {
+        color: var(--secondary-text-color);
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--primary-text-color);
+      }
+
+      .box {
+        --my-var:yellow;
+        padding: var(--default-margin);
+        background-color: var(--card-background-color);
+        margin-block: var(--default-margin);
+        border-radius: var(--default-margin);
+      }
+
+      h2 {
+        background-color: var(--my-var);
+        color: var(--primary-text-color);
+        margin-bottom: var(--default-margin);
+      }
+
+      @media (max-width: 800px) {
+        .container {
+          --my-var: pink;
+        }
+      }
+    </style>
+  </head>
+  <body class="dark">
+
+    <div class="container">
+      <h1>Nature Park</h1>
+      <div class="box">
+        <h2>Waterfalls</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad neque
+          officia corporis delectus nesciunt,totam quas accusantium quidem minus
+          maxime?
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>Hills</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad neque
+          officia corporis delectus nesciunt,totam quas accusantium quidem minus
+          maxime?
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>Snow Mountains</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad neque
+          officia corpor delectus nesciunt,totam quas accusantium quidem minus
+          maxime?
+        </p>
+      </div>
+      
+    </div>
+  </body>
+</html>

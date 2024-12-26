@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture_2 (color property)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            /* font-style:italic; */
+            font-size: 20px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            line-height: 60px;
+        }
+
+         #firstpara {
+            background-color: yellow;
+        }
+
+        #secondpara {
+            background-color: rgb(139, 135, 175);
+        }
+
+        #thirdpara {
+            background-color: rgba(200, 50, 0, 0.6);
+        }
+
+        .fisrtclass {
+            background-color:#ffab23;
+        }
+
+        /* hsl(hue, saturtion , lightness) */
+        .secondclass {
+            background-color:hsl(120, 100%, 100%);
+        } 
+
+        /* hsla(hue, saturtion , lightness, Alpha(opacity)) */
+        .thirdclass {
+            background-color:hsla(150, 100%, 50% , 0.7);
+        } 
+    </style>
+</head>
+  <h2>Topic: Fonts, Colors && Developes tools</h2>
+
+  <ul> Topic: Alpha Channel
+    <li>R=> Red(0-255)</li>
+    <li>G=> Green(0-255)</li>
+    <li>B=> Blue(0-255)</li>
+    <li>A=> Alpha[opacity (0-1)](opacity = transparency)</li>
+    <li>opacity set to 0 => no visible</li>
+    <li>opacity set to 0.5 => visible</li>
+    <li>opacity set to 1 => highly visible</li>
+    <li>Example of RGBA => color: rgba(255, 0, 0, 0.5)</li>
+</ul>
+
+  <p id="firstpara">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Perferendis rerum quasi itaque eos quisquam accusantium labore id similique et eum.
+  </p>
+
+  <p id="secondpara">
+        hsl(hue, saturtion , lightness).
+        Hue is a degree on the color wheel from 0 to 360. ( 0 or 360) is red, 120 is green, 240 is blue.
+        <br>
+        Saturation can be described as the intensity of a color. It is a percentage value from 0% to 100%.
+        100% is full color, no shades of gray.
+        50% is 50% gray, but you can still see the color.
+        0% is completely gray; you can no longer see the color.
+        <br>
+        Lightness
+        The lightness of a color can be described as how much light you want to give the color, where 0% means no light (dark), 50% means 50% light (neither dark nor light), and 100% means full light.
+  </p>
+
+  <p id="thirdpara">
+    hsla(hue, saturation, lightness, alpha).
+    The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+ </p>
+
+  <div class="fisrtclass">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, assumenda, eveniet eum enim adipisci dignissimos, aliquam saepe molestiae ab excepturi labore reprehenderit nam tenetur rerum libero sapiente optio temporibus officiis.</p>
+  </div>
+
+  <div class="secondclass">
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, assumenda, eveniet eum enim adipisci dignissimos, aliquam saepe molestiae ab excepturi labore reprehenderit nam tenetur rerum libero sapiente optio temporibus officiis.</p>
+ </div>
+
+ <div class="thirdclass">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, assumenda, eveniet eum enim adipisci dignissimos, aliquam saepe molestiae ab excepturi labore reprehenderit nam tenetur rerum libero sapiente optio temporibus officiis.</p>
+</div>
+
+
+   
+</body>
+</html>

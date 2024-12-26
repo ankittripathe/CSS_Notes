@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_16 (Pseudo classes => :nth-child )</title>
+    <style>
+      body {
+        font-family: cursive;
+        padding: 40px;
+      }
+
+      /* unvisited link */
+      .primary:link {
+        color: #ff0000;
+        padding: 10px;
+      }
+
+      /* visited link */
+      .primary:visited {
+        color: #00ff00;
+      }
+
+      /* mouse over link */
+      .primary:hover {
+        color: orangered;
+        background-color: black;
+      }
+
+      /* selected link */
+      .primary:active {
+        color: #0000ff;
+        background-color: white;
+        border: 4px solid black;
+      }
+
+      /* Exampple of Focus */
+      input:focus {
+        background-color: aqua;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /***** nth child ****/
+      /** an+b formula apply **/
+
+      /* ul li:nth-child(4) {
+        background-color: orange;
+      } */
+
+      /* ul li:nth-child(3n) {
+        background-color: red;
+      } */
+
+      ul li:nth-child(2n + 1) {
+        /* n = 0, 1, 2, 3... */
+        background-color: #00ff00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h2>This is Good Day</h2>
+
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" />
+        <label for="password">Password:</label>
+        <input type="password" />
+      </form>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure iste ex,
+        consequuntur cum earum numquam magnam fugit sapiente! Natus, corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laboriosam
+        perspiciatis veniam cupiditate libero. Neque vitae itaque maxime
+        inventore iusto voluptate animi? Ratione distinctio quaerat quia nisi
+        dolorum soluta. At!
+      </p>
+
+      <a class="primary" href="#">Learn more</a>
+
+      <ul>
+        <li>items-1</li>
+        <li>items-2</li>
+        <li>items-3</li>
+        <li>items-4</li>
+        <li>items-5</li>
+        <li>items-6</li>
+        <li>items-7</li>
+        <li>items-8</li>
+        <li>items-9</li>
+        <li>items-10</li>
+      </ul>
+
+      <ul>
+        <li>items2-1</li>
+        <li>items2-2</li>
+        <li>items2-3</li>
+        <li>items2-4</li>
+        <li>items2-5</li>
+      </ul>
+    </main>
+  </body>
+</html>

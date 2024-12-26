@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Quaries Pratice1</title>
+    <style>
+      .container {
+        height: 100vh;
+        border: 3px solid black;
+        display: flex;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid maroon;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      #box1 {
+        background-color: lightblue;
+      }
+
+      #box2 {
+        background-color: lightyellow;
+      }
+
+      #box3 {
+        background-color: palevioletred;
+      }
+
+      #box4 {
+        background-color: lightsalmon;
+      }
+
+      @media (mix-width: 640px) {
+        .container {
+          flex-direction: row;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          flex-direction: column;
+          background-color: palegreen;
+          border-radius: 10px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box A</div>
+      <div class="box" id="box2">Box B</div>
+      <div class="box" id="box3">Box C</div>
+      <div class="box" id="box4">Box D</div>
+    </div>
+  </body>
+</html>

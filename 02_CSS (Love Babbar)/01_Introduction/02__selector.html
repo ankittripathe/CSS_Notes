@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_1 (Element Selectors)</title>
+    <style>
+      p {
+        color: blue;
+      }
+
+      .para1 {
+        background-color: green;
+        color: black; 
+      }
+
+      p.para1 {
+        text-align: center;
+        font-family: cursive;
+      }
+
+      #article1 {
+        background-color: orangered;
+        color: white;
+      }
+
+      /* to selecct multiple items */
+      p,article {
+        width: 700px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    Notes: CSS Sepecificity(priority) => inline Style > id Selector > class or Attributes Selector > Element Selector > universal Selector
+
+    <h1>Topic:Elements Selector</h1>
+
+    <ul>
+      <li>Element selector=> h1 / p / div / article .. etc</li>
+      <li>id selector=> #myid (denoted by #)</li>
+      <li>class selector=> .myclass (denoted by .)</li>
+      <li>
+        group selector=> p,article [selected by using comma, (apply property in more than one)]
+      </li>
+    </ul>
+
+    <p class="para1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+      provident veniam officia expedita perferendis voluptatum adipisci illum?
+    </p>
+
+    <p class="para1">My Name is Ankit Tripathi</p>
+
+    <p>My Name is Ankit tripathi Ultra Pro Max</p>
+
+    <article id="article1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo qui sequi
+      repudiandae laboriosam minus en minima eligendi tempora dolorem dicta
+      voluptas nam aliquam exercitationem odio quidem sunt, commodi fugiat
+      etpossimus eius alias, tenetur provident quia? Cumque nisi atque molestias?
+    </article>
+  </body>
+</html>

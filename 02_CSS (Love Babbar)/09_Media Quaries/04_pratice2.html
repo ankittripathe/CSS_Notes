@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media_Quaries Pratice2</title>
+    <style>
+      .container {
+        background-color: bisque;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      #boxleft {
+        background-color: lightgreen;
+        border: 2px solid blue;
+        width: 47%;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #boxright {
+        background-color: yellow;
+        border: 2px solid brown;
+        width: 47%;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      p {
+        border: 2px solid red;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          flex-direction: column;
+          background-color: orangered;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>Media Quaries_1</p>
+        <p>Media Quaries_2</p>
+      </div>
+
+      <div id="boxright">
+        <img src="images/msd_2.jpg" height="300px" width="235px" />
+      </div>
+    </div>
+  </body>
+</html>

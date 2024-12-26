@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10 (Multiple Shadow apply)</title>
+    <style>
+      .container {
+        background-color: burlywood;
+        height: 550px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: aquamarine;
+        width: 350px;
+        height: 350px;
+        border: 1px solid brown;
+        padding: 10px;
+        /* multiple Shadow Apply Rule */
+        box-shadow: 15px 25px orangered, 20px 30px yellow;
+        /* multiple Blur Apply Rule */
+        /* box-shadow: 10px 15px 7px orangered, 15px 20px 5px yellow;  */
+      }
+
+      img {
+        margin-left: 40px;
+        box-shadow: 8px 8px 15px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="images/emart.PNG" />
+        <h2>shadow property</h2>
+        <p>
+          To specify multiple shadows, provide a comma-separated list of
+          shadows.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_10 (Shadow with blur property)</title>
+    <style>
+      .container {
+        background-color: lightcyan;
+        height: 600px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: aquamarine;
+        width: 330px;
+        height: 330px;
+        border: 2px solid brown;
+        padding: 5px;
+        /* box-shadow: x-offset | y-offset | blur | color */
+        box-shadow: 20px 30px 15px yellow;
+      }
+
+      img {
+        margin-left: 40px;
+        margin-top: 10px;
+        box-shadow: 12px 12px 15px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      blur radius=> The higher the number, the more blurred the shadow will be.
+    </h3>
+    <div class="container">
+      <div class="box">
+        <img src="images/emart.PNG" />
+        <h2>Shadow with blur Property</h2>
+        <p>
+          box-shadow: (x-offset/h-offset) | (y-offset/v-offset) | blur | color
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

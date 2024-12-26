@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_12 (transition PraticSet_1)</title>
+    <style>
+      div {
+        background-color: aqua;
+        height: 300px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        /*
+         transition shorthand: transition-property | transition-duration | transition-timing-function| transition-delay | transition-behavior.
+        */
+
+        transition: background-color 0.6s ease-in-out 0.1s;
+      }
+
+      div:hover {
+        background-color: palevioletred;
+      }
+
+      .target {
+        font-size: 20px;
+        transition-property: font-size;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+      }
+
+      .target:hover {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- notes: -->
+    <ul>
+      transition => A shorthand property for setting the four transition properties into a single property
+      <li>
+        transition-delay =>	Specifies a delay (in seconds) for the transition effect.
+      </li>
+      <li>
+        transition-duration	=> Specifies how many seconds or milliseconds a transition effect takes to complete
+      </li>
+      <li>
+        transition-property => Specifies the name of the CSS property the transition effect is for
+      </li>
+      <li>
+        transition-timing-function =>	Specifies the speed curve of the transition effect
+      </li>
+    </ul>
+
+    <!-- Discussion -->
+    <div>
+      <p class="target">Hover over me</p>
+    </div>
+  </body>
+</html>

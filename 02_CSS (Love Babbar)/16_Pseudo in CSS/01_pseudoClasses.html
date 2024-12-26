@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_16 (Pseudo classes)</title>
+    <style>
+      body {
+        font-family: cursive;
+        padding: 40px;
+      }
+
+      /* unvisited link  */
+      .primary-btn:link {
+        color: green;
+        padding: 10px;
+      }
+
+      /* visited link */
+      .primary-btn:visited {
+        color: orangered;
+      }
+
+      /* mouse over link */
+      .primary-btn:hover {
+        background-color: black;
+        color: red;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 7px;
+      }
+
+      /* selected link */
+      .primary-btn:active {
+        color: #0000ff;
+        background-color: white;
+        border: 4px solid black;
+        margin: 20px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      ul li:first-child {
+        background-color: #00ff00;
+      }
+
+
+      ul li:nth-child(3) {
+        background-color: palevioletred;
+      }
+
+      ul li:last-child {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h2>This is Good Day</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure iste ex,
+        consequuntur cum earum numquam magnam fugit sapiente! Natus, corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laboriosam
+        perspiciatis veniam cupiditate libero. Neque vitae itaque maxime
+        inventore iusto voluptate animi? Ratione distinctio quaerat quia nisi
+        dolorum soluta. At!
+      </p>
+
+      <a class="primary-btn" href="">Learn More</a>
+
+      <ul>
+        <li>items-1</li>
+        <li>items-2</li>
+        <li>items-3</li>
+        <li>items-4</li>
+        <li>items-5</li>
+        <li>items-6</li>
+        <li>items-7</li>
+        <li>items-8</li>
+        <li>items-9</li>
+        <li>items-10</li>
+      </ul>
+
+      <ul>
+        <li>items2-1</li>
+        <li>items2-2</li>
+        <li>items2-3</li>
+        <li>items2-4</li>
+        <li>items2-5</li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (justify-content)</title>
+    <style>
+      .containers {
+        height: 1100px;
+        background-color: grey;
+        border: 3px solid black;
+        padding: 2px;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: flex-start; */
+        justify-content: center;
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+      }
+
+      .box {
+        height: 70px;
+        width: 70px;
+        border: 2px solid yellow;
+        margin: 2px;
+        padding: 50px;
+      }
+
+      #box1 {
+        background-color: red;
+      }
+      #box2 {
+        background-color: orangered;
+      }
+      #box3 {
+        background-color: blue;
+      }
+      #box4 {
+        background-color: powderblue;
+      }
+      #box5 {
+        background-color: sandybrown;
+      }
+    </style>
+  </head>
+  <body>
+    justify-content works on main axis{from left-right}(horizentally by default)
+    <h2>The justify-content property is used to align the flex items:</h2>
+    <ul>
+      <li>
+        justify-content: center =>The center value aligns the flex items at the
+        center of the container:
+      </li>
+      <li>
+        justify-content: flex-start => The flex-start value aligns the flex
+        items at the beginning of the container (this is default):
+      </li>
+      <li>
+        justify-content: flex-end => The flex-end value aligns the flex items at
+        the end of the container:
+      </li>
+      <li>
+        justify-content: space-around => The space-around value displays the
+        flex items with space before, between, and after the lines:
+      </li>
+      <li>
+        justify-content: space-between => The space-between value displays the
+        flex items with space between the lines:
+      </li>
+      <li>justify-content: space-evenly</li>
+    </ul>
+
+    <!-- notes:
+    if flex-direction: row => main axis => horizontal(x-axis)
+    if flex-direction: column => main axis => vertical(y-axis)
+   -->
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

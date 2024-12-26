@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox (order)</title>
+    <style>
+      .containers {
+        height: 500px;
+        background-color: rgb(236, 236, 159);
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid maroon;
+      }
+
+      #box1 {
+        background-color: aqua;
+        order: 2;
+      }
+      /* notes: order me -1 , -2, 1, 2, 3, aaise ordering hoga -ve pahle aaega aur +ve badd me  */
+
+      #box2 {
+        background-color: orangered;
+        order:-3; 
+        /* order=> -ve set kr dene se sabse aage aa jaega */
+      }
+
+      #box3 {
+        background-color: blue;
+        order: 3;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+
+      #box5 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      order => The order property specifies the order of the flex items.
+    </h1>
+
+    <div class="containers">
+      <div class="box" id="box1">A</div>
+      <div class="box" id="box2">B</div>
+      <div class="box" id="box3">C</div>
+      <div class="box" id="box4">D</div>
+      <div class="box" id="box5">E</div>
+    </div>
+  </body>
+</html>

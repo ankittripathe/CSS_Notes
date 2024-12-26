@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anuj bhaiya  (CSS Grid -justify-content & align-content)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        border: 2px solid green;
+        padding: 12px;
+      }
+
+      .conatiner {
+        height: 400px;
+        border: 3px solid red;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 10px;
+        /* grid-template-columns: 200px 200px; */
+
+        /* grid-template-rows: 150px 60px; */
+        /* grid-auto-rows: 100px; */
+
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* justify-content: start; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+        /* align-content: start; */
+        /* align-content: center; */
+        /* align-content: end; */
+        /* align-content: space-evenly; */
+        /* align-content: space-between; */
+        /* align-content:space-around; */
+
+        /* box ke upar niche imaginary ban rha hai inspect me dekho*/
+        /* align-items: center; */
+        /* align-items: start; */
+        /* align-items: end; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+      <div class="box" id="box5">box5</div>
+      <div class="box" id="box6">box6</div>
+      <div class="box" id="box7">box7</div>
+      <div class="box" id="box8">box8</div>
+      <div class="box" id="box9">box9</div>
+      <div class="box" id="box10">box10</div>
+    </div>
+  </body>
+</html>

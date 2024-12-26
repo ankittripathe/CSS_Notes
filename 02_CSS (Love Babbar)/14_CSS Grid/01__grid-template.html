@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      anuj bhaiya (CSS Grid - grid-template-columns & grid-template-rows)
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        border: 2px solid green;
+        padding: 12px;
+      }
+
+      .conatiner {
+        border: 2px solid red;
+        display: grid;
+        /* gap: 10px   shorthand property of row-gap and row-column */
+        /* row-gap: 20px; */
+        /* column-gap: 5px; */
+        /* grid-template-columns: 100px 200px 300px; */
+        /* grid-template-columns: 30% 70%; */
+
+        /* fr= fraction */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+        /* grid-template-columns:repeat(4, 1fr); */
+        /* grid-template-columns:repeat(4, 100px); */
+        /* grid-template-columns:repeat(autofill, 100px); */
+        /* grid-template-columns: auto auto; */
+        /* grid-template-columns: 200px auto auto; */
+        /* grid-template-columns: 200px 200px; */
+
+        /* grid-template-rows: 100px 80px 100px 400px; */
+        /* grid-template-rows: 1fr 2fr 3fr 2fr; */
+        /* grid-template-rows: repeat(4,100px) */
+        /* grid-template-rows: 200px 60px 100px; */
+        /* grid-template-rows: 200px 80px; */
+        grid-auto-rows: 140px;
+        /* grid auto means => bacha wala rows jo grid-template-rows me nhi diya gaya hai uska grid auto row me jo value hai o set ho jaega. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+      <div class="box" id="box5">box5</div>
+      <div class="box" id="box6">box6</div>
+      <div class="box" id="box7">box7</div>
+      <div class="box" id="box8">box8</div>
+      <div class="box" id="box9">box9</div>
+      <div class="box" id="box10">box10</div>
+    </div>
+  </body>
+</html>

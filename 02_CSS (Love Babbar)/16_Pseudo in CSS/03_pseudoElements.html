@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_16 (Pseudo Elements)</title>
+    <style>
+      body {
+        font-family: cursive;
+        padding: 40px;
+      }
+
+      /* Pseudo Elements */
+      h2::first-letter {
+        background-color: #00ff00;
+        font-size: 3rem;
+      }
+
+      p::first-line {
+        background-color: burlywood;
+      }
+
+      ::selection {
+        color: greenyellow;
+        background: black;
+      }
+
+      ::marker {
+        color: orange;
+        font-size: 20px;
+        font-family: cursive;
+      }
+
+      /*** before & after  ****/
+      h1::before {
+        content: "**";
+        color: #00ff00;
+      }
+
+      h1::after {
+        content: "##";
+        color: #00ff00;
+      }
+
+      input:focus {
+        background-color: aqua;
+      }
+
+      .required::after {
+        color: red;
+        content: "*";
+      }
+
+      .important::after {
+        content: "important";
+        background-color: red;
+        color: white;
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        margin-left: 10px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Main content is Here</h1>
+
+      <form>
+        
+        <label class="required" for="name">Name</label>
+        <input type="text" />
+
+        <label class="required" for="password">Password</label>
+        <input type="password" />
+      </form>
+
+      <h2>This is Good Day</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure iste ex,
+        consequuntur cum earum numquam magnam fugit sapiente! Natus, corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laboriosam
+        perspiciatis veniam cupiditate libero. Neque vitae itaque maxime
+        inventore iusto voluptate animi? Ratione distinctio quaerat quia nisi
+        dolorum soluta. At! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam in nesciunt aperiam veritatis voluptatibus eum, molestiae quibusdam expedita est incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dicta. Et possimus autem, doloremque id numquam repellendus, suscipit accusantium placeat fugiat velit veritatis nam perferendis quos maxime quas. Qui, necessitatibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laudantium dolorum magni quos deleniti sapiente aspernatur suscipit cupiditate numquam cum? Qui assumenda blanditiis eaque facilis illo quam. Nemo consequatur officiis, quae animi voluptatum cumque vero hic quaerat consectetur. Consequuntur, tempora ex error molestiae cumque voluptatum voluptatem quae quasi? Mollitia voluptatibus, facere distinctio, cumque soluta odit, debitis ut ducimus praesentium sed magnam veritatis earum delectus. Corporis ullam maxime laborum consectetur perspiciatis porro similique delectus quidem atque maiores inventore repellendus quos tenetur, doloribus quaerat molestias fuga ex quasi id cumque ab. Totam ratione nemo laudantium dolor tempora labore corrupti vitae animi obcaecati.
+
+      </p>
+
+      <a class="primary" href="#">Learn more</a>
+
+      <ol>
+        <li class="important">items-1</li>
+        <li>items-2</li>
+        <li>items-3</li>
+        <li>items-4</li>
+        <li>items-5</li>
+        <li>items-6</li>
+        <li>items-7</li>
+        <li>items-8</li>
+        <li>items-9</li>
+        <li class="important">items-10</li>
+      </ol>
+
+      <ul>
+        <li>items2-1</li>
+        <li>items2-2</li>
+        <li class="important">items2-3</li>
+        <li>items2-4</li>
+        <li>items2-5</li>
+      </ul>
+    </main>
+  </body>
+</html>
