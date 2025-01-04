@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gilroy";
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .parent{
+        height: 100%;
+        width: 100%;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;      /*cross axes(y-axis)*/
+        justify-content: center;  /*main axes(x-axis)*/
+        justify-content: space-evenly;
+        flex-wrap: wrap; /*wrap krne pe niche chala jaega jagah jab nhi hoga tab.*/
+        /* flex-direction: column; */
+      }
+
+      .child1{
+        height: 200px;
+        width: 200px;
+        background-color: crimson;
+        border: 3px solid black;
+      }
+
+      .child2{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border: 3px solid black;     
+      }
+
+      .child3{
+        height: 200px;
+        width: 200px;
+        background-color: orange;
+        border: 3px solid black;     
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+  </body>
+</html>

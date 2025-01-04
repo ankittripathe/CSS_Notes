@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 4vw;
+}
+
+.nav h2 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
+.nav-part2 {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+
+.nav h4 {
+  font-size: 1.7vw;
+  font-weight: 500;
+}
+
+.nav i {
+  font-size: 2.5vw;
+  display: none;
+}
+
+.nav button {
+  font-size: 2vw;
+  padding: 0.1vw 0.7vw;
+  background-color: #3EB474;
+  color: #fff;
+  border-radius: 0.5vw;
+  border: none;
+  font-family: 900;
+}
+
+/* Content Area */
+.content {
+  height: calc(100% - 70px);
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  width: 55%;
+  padding: 2vw 4vw;
+}
+
+.left h1 {
+  font-size: 4.7vw;
+  line-height: 5vw;
+  font-weight: 600;
+}
+
+.left span {
+  color: #3EB474;
+}
+
+.left p {
+  font-size: 1.3vw;
+  width: 82%;
+  color: #666;
+  margin-top: 1.3vw;
+}
+
+.content button {
+  font-size: 1.9vw;
+  padding: 0.8vw 1.3vw;
+  background-color: #3EB474;
+  color: #fff;
+  border: none;
+  margin-top: 2vw;
+  border-radius: 0.6vw;
+  font-weight: bolder;
+}
+
+.right {
+  height: 100%;
+  width: 45%;
+}
+
+.right img {
+  height: 100%;
+  width: 100%;
+}
+
+/* media Quaries => Responsiveness */
+@media (max-width: 600px) {
+  .nav {
+    height: 60px;
+    padding: 0vw 8vw;
+  }
+
+  .nav h2 {
+    font-size: 9vw;
+  }
+
+  .nav h4 {
+    font-size: 6vw;
+    display: none;
+  }
+
+  .nav i {
+    display: block;
+    font-size: 8vw;
+    font-weight: 900;
+  }
+
+  .nav button {
+    display: none;
+  }
+
+  .content {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    height: 55%;
+    width: 100%;
+    padding: 1vw 8vw;
+  }
+
+  .left h1 {
+    font-size: 9vw;
+    line-height: 11vw;
+  }
+
+  .left p {
+    font-size: 3.8vw;
+    width: 90%;
+    margin-top: 3vw;
+    font-weight: 500;
+  }
+
+  .content button {
+    font-size: 3.5vw;
+    padding: 3vw 6vw;
+    margin-top: 2.5vw;
+    border-radius: 1.6vw;
+  }
+
+  .right {
+    height: 45%;
+    width: 100%;
+  }
+}

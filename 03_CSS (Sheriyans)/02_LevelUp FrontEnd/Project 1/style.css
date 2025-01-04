@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    /* background-color:salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#nav-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+#nav h3 {
+    font-size: 17px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+#nav i {
+    font-size: 17px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+
+#nav h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#nav button {
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: 1.5px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#btn2 {
+    background-color: orangered;
+    color: #ffff;
+    border: none !important;
+}
+
+#main>h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+}
+
+#img1 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#img2 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#img3 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#btn-left {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+}
+
+#btn-right {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 17px;
+}
+
+#rightfooter {
+    display: flex;
+    gap: 9px;
+    position: absolute;
+    bottom: 9%;
+    right: 4%;
+    font-size: 27px;
+}
+
+#download-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+#arrow {
+    margin: 4px 7px 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}

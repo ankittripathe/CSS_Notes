@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Quaries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gilroy";
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid #000;
+        background-color: crimson;
+      }
+
+      @media (max-width: 600px) {
+        .box {
+          background-color: orange;
+        }
+      }
+
+      /* Notes: when width is equal to 600px or less then that,then this property will work. */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

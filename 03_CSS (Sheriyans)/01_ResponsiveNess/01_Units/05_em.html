@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em & rem</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gilroy";
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      #parent{
+        background-color: #eaea;
+        width: 40%;
+        font-size: 20px;
+      }
+
+      h1{
+        font-size: 2.5em;
+      }
+
+      h2{
+        font-size: 2em;
+      }
+
+      h3{
+        font-size: 1.5em;
+      }
+      /* em depedent on parent font-size */
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Hello mein hu Hero!</h1>
+      <h2>Mera Name hai Ankit</h2>
+      <h3>Learning Responsiveness</h3>
+    </div>
+
+    <div>
+        <h5></h5>
+    </div>
+  </body>
+</html>
