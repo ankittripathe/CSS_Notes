@@ -1,32 +1,45 @@
 /* universal selector */
-*{
-    background-color: black;
-    color: white;
+* {
+  background-color: black;
+  color: white;
 }
 
 /* Element Selector */
-h1{
-    color: yellow;
+h1 {
+  color: yellow;
 }
 
-h2, h3, h4 {
-    color: paleturquoise;
+h2,
+h3,
+h4 {
+  color: paleturquoise;
 }
-
 
 /*  id selector(#) */
-#headingOne{
-    color: salmon;
+#headingOne {
+  color: salmon;
 }
 
-#headingTwo{
-    color: blue;
+#headingTwo {
+  color: blue;
+}
+
+button {
+  color: pink; /* lowest priority */
 }
 
 /* class Selector(.) */
-.myclass{
-    color: mediumspringgreen;
+.myclass {
+  background-color: blue;  /* higher than element selector */
 }
 
+#btn {
+  color: white;
+  background-color: blue;   /* higher than class */
+}
+
+button {
+  background-color: purple !important; /* highest unless another !important overrides */
+}
 
 /* this is comment */

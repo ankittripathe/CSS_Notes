@@ -3,39 +3,39 @@
    font-weigt:100-900
 */
 
-#h1 {
+#one {
   font-weight: 100;
 }
 
-#h2 {
+#two {
   font-weight: bolder;
 }
-
-#h3 {
+ 
+#thre {
   font-weight: bold;
 }
 
-#h4 {
+#four {
   font-weight: 900;
 }
 
-#h5 {
+#five {
   font-weight: 600;
 }
 
-#h6 {
+#six {
   font-weight: 500;
 }
 
-#h7 {
+#seven {
   font-weight: 400;
 }
 
-#h8 {
+#eight {
   font-weight: normal;
 }
 
-#h9 {
+#nine {
   font-weight: lighter;
   color: green;
 }

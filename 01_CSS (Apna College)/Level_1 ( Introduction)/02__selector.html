@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Level_1 (CSS Selector)</title>
-    <link rel="stylesheet" href="02_selector.css" />
-  </head>
-  <body>
-    <!-- Element selector h1 -->
-    <h1>Topic CSS Selector</h1>
+<head>
+  <title>Level_1 (CSS Selector)</title>
+  <link rel="stylesheet" href="02_selector.css" />
+</head>
+<body>
+  <!-- Element selector h1 -->
+  <h1>Topic CSS Selector</h1>
+  <h2>Hello 1</h2>
+  <h3>Hello 2</h3>
+  <h4>Hello 3</h4>
 
-    <h2>hello_1</h2>
-    <h3>hello_2</h3>
-    <h4>hello_3</h4>
+  <!-- Id selector => apply on single (unique). has higher prioprity then class or elements -->
+  <h1 id="headingOne">
+    heading One
+  </h1>
 
-    <!-- Id selector => apply on single(unique) -->
-    <h1 id="headingOne">This is headingOne</h1>
-    <h1 id="headingTwo">This is headingTwo</h1>
+  <h1 id="headingTwo">
+    heading Two
+  </h1>
 
-    <!-- class Selector => apply on multiple -->
-    <h1 class="myclass">Hello class Selector</h1>
-    <p class="myclass">Hello Hello Class Selector</p>
-    <button class="myclass">Click Me</button>
-  </body>
+  <!-- class selector => apply on multiple -->
+  <h1 class="myclass">
+    Hello from class Selector
+  </h1>
+
+  <p class="myclass">
+    Namaste from para Class Selector
+  </p>
+
+  <button class="myclass" id="btn">
+    Submit
+  </button>
+
+  <!-- Notes:
+   button {
+    color: blue; /* lowest priority */
+  }
+    
+  .myclass {
+    color: green; /* higher than element selector *
+  }
+    
+  #btn {
+    color: red; /* higher than class */
+  }
+    
+  button {
+    color: purple !important; /* highest unless another !important overrides */
+  }
+  -->
+</body>
 </html>

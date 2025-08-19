@@ -1,10 +1,20 @@
 /* font-family: cursivre  */
-#one {
+#paraOne {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: orangered;
+  background-color: lightsalmon;
 }
 
-#two {
+#paraTwo {
   font-family: cursive;
   background-color: lightgreen;
+}
+
+#paraThree{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightblue;
+}
+
+#paraFour{
+  font-family: cursive;
+  background-color: crimson;
 }

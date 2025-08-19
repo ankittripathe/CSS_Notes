@@ -13,7 +13,6 @@ h2 {
 
 h3 {
   text-align: right;
-  /* background-color: orangered; */
 }
 
 p {
@@ -26,7 +25,7 @@ h4 {
   background-color: salmon;
 }
 
-#headingFive{
-    text-align: center;
-    background-color: rgb(25, 156, 156);
+#headingFive {
+  text-align: center;
+  background-color: rgb(25, 156, 156);
 }
