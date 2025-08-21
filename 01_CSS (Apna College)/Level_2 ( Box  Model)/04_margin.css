@@ -1,19 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 div {
   height: 100px;
   width: 100px;
   text-align: center;
   background-color: pink;
-  border: 5px solid black;
+  border: 2px solid black;
   padding: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  /*
-    margin Shorthand: margin-top | margin-right | margin-buttom | margin-left;
-    margin: 50px;   applied 25px in all 4 directimargin
-  */
-  margin: 50px;
+  margin: 50px 40px;
 }
 
 

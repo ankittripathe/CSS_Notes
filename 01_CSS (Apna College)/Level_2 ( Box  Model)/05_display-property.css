@@ -1,57 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #one {
   background-color: blue;
-  display: inline; /* set nhi hoga*/
-  width: 700px; /* set nhi hoga*/
-  margin: 40px;
-  margin-top: 100px; /* set nhi hoga*/
-  margin-bottom: 300px; /* set nhi hoga*/
+  display: inline;
+  width: 700px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px; /* set hoga */
+  margin-right: 10px; /*set hoga*/
   padding: 25px;
-  /* display: inline 
-    me margin top & buttom ka set nhi kr skte hai bas left aur right ka magin set hoga. height & width vi set nhi kr skte display inline me
-  */
+  /* display: inline me height, width set nhi kr skte hai. Aur marign top, margin bottom vi nhi set kr skte hai margin left, margin right hoga. */
 }
 
 #two {
   height: 100px;
   width: 100px;
   background-color: green;
-  margin: 25px;
+  margin: 30px 15px 25px;
   padding: 25px;
-  display: none; 
-   /*display: none krne se content hide ho jaega & no space is reserved.*/
-  visibility: hidden;
+  display: none;
+  /*display: none krne se content hide ho jaega & no space is reserved.*/
+  /* visibility: hidden;  */
 }
 
 #three {
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
-  margin: 25px;
-  padding: 25px;
   display: inline-block;
-  visibility: hidden;
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  margin: 20px;
+  padding: 25px;
+  /* visibility: hidden; */
   /*visibility: hidden; kr dene se content hide ho jaega but space is reserved.*/
 }
 
 #four {
+  display: inline-block;
   height: 100px;
   width: 100px;
   background-color: pink;
   margin: 25px;
   padding: 25px;
-  display: inline-block;
 }
 
-/* h1 => block elements (take 100% width) */
+/* h1 => block-elements (take 100% width) */
 h1 {
   background-color: crimson;
 }
 
-/* sapn, a => inline element (takes only the  required space)*/
+/* sapn, a, button => inline-element (takes only the required space) */
 span {
   background-color: orangered;
 }
 
 a {
-  background-color: orchid;
+  background-color: lightgreen;
+  text-decoration: none;
 }
