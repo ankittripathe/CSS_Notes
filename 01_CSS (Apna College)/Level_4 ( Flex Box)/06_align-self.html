@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox (align-self)</title>
-    <style>
-      .box {
-        height: 50px;
-        width: 150px;
-        display: inline-block;
-        border: 2px solid black;
-      }
+<head>
+  <title>Flexbox (align-self)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      #box1 {
-        background-color: aqua;
-        height: 75px;
-      }
+    .box {
+      height: 75px;
+      width: 150px;
+      display: inline-block;
+      border: 1px solid black;
+      text-align: center;
+    }
 
-      #box2 {
-        background-color: blue;
-        height: 150px;
-        align-self: flex-end;
-      }
+    #box2 {
+      align-self: flex-end;
+    }
 
-      #box3 {
-        background-color: green;
-        height: 50px;
-      }
+    #box3 {
+      align-self: center;
+   
+    }
 
-      #box4 {
-        background-color: yellow;
-      }
+    #box4 {
+      align-self: flex-start;
 
-      #box5 {
-        background-color: maroon;
-        align-self: flex-end;
-      }
+    }
+    
+    #box5 {
+      align-self: flex-end;
+    }
 
-      #containers {
-        height: 600px;
-        border: 2px solid black;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-start;
-      }
-    </style>
-  </head>
+    #containers {
+      height: 590px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <!-- Notes: Particular items ko align kr skte hai align-self se (selected Elememts ko) -->
+  <h3>
+    align-self:- The align-self property specifies the alignment for the
+    selected item inside the flexible container.
+  </h3>
+  <h3>
+    The align-self property overrides the default alignment set by the container's align-items property.
+  </h3>
 
-  <body>
-        <!-- Notes:
-       particular items ko align kr skte hai align-self se (selected Elememts ko) -->
-       <ul>
-        align-self => The align-self property specifies the alignment for the
-        selected item inside the flexible container.
-        <br><br>
-        The align-self property overrides the default alignment set by the container's align-items property.
-      </li>
-    </ul>
-    <div id="containers">
-      <div class="box" id="box1">Box1</div>
-      <div class="box" id="box2">Box2</div>
-      <div class="box" id="box3">Box3</div>
-      <div class="box" id="box4">Box4</div>
-      <div class="box" id="box5">Box5</div>
-    </div>
-  </body>
+  <div id="containers">
+    <div class="box" id="box1" style="background-color: orangered">Box1</div>
+    <div class="box" id="box2" style="background-color: yellow">Box2</div>
+    <div class="box" id="box3" style="background-color: navy">Box3</div>
+    <div class="box" id="box4" style="background-color:lightgreen">Box4</div>
+    <div class="box" id="box5" style="background-color:seashell">Box5</div>
+  </div>
+</body>
 </html>

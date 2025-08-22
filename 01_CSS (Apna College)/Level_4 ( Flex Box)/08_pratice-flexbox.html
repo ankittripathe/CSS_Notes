@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratice Set6</title>
-    <style>
-      .navbar {
-        background-color: pink;
-        display: flex;
-        justify-content: space-around;
-      }
 
-      a {
-        text-decoration: none;
-        color: black;
-        margin-inline: 100px;
-      }
+<head>
+  <title>Pratice Set6</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
 
-      li {
-        display: inline;
-      }
+    }
 
-      .outer {
-        height: 400px;
-        width: 400px;
-        background-color: cornflowerblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    body {
+      background-color: black;
+      color: white;
+    }
 
-      .inner {
-        height: 100px;
-        width: 100px;
-        background-color: yellow;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </div>
+    .navbar {
+      height: 50px;
+      background-color: lightgreen;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 25px;
+    }
 
-    <div class="outer">
-      <div class="inner"></div>
-    </div>
-  </body>
+    .navbar li {
+      list-style-type: none;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .outer {
+      height: 300px;
+      width: 300px;
+      background-color: cornflowerblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+    }
+
+    .inner {
+      background-color: yellow;
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Help</a></li>
+  </div>
+
+  <div class="outer">
+    <div class="inner"></div>
+  </div>
+</body>
 </html>

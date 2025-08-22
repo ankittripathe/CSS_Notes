@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Quaries</title>
-    <style>
+<head>
+  <title>Media Quaries</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: lightslategray;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: teal;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      border-radius: 8px;
+    }
+
+
+    /* Agar width size 600px hai toh E color apply kr doo shift 600px pe kam jata pe nhi */
+    @media (width: 600px) {
       .container {
-        height: 500px;
-        display: flex;
-        justify-content: center;
+        background-color: aquamarine;
       }
 
-      div #box1 {
-        height: 150px;
-        width: 150px;
-        background-color: pink;
+       .box {
+        background-color: yellow;
       }
+    }
 
-      /* Agar width size 600px hai toh E color apply kr doo shift 600px pe kam jata pe nhi */
-      @media (width: 600px) {
-        div {
-          background-color: red;
-        }
-        div #box1 {
-          background-color: lightgreen;
-        }
+    /* kam se kam width 650px ho tab uspe E color Apply kr doo */
+    @media (min-width: 650px) {
+     .container {
+        background-color:beige;
       }
+    }
 
-      /* kam se kam width 650px ho tab uspe E color Apply kr doo */
-      @media (min-width: 650px) {
-        div #box1 {
-          background-color: green;
-        }
+    /* 500px width se kam pe E color Apply kr doo */
+    @media (max-width: 500px) {
+      .box {
+        background-color: orangered;
       }
+    }
 
-      /* 500px width se kam pe E color Apply kr doo */
-      @media (max-width: 500px) {
-        div {
-          background-color: lightsalmon;
-        }
+    @media (min-width: 600px) And (max-width: 700px) {
+      .box {
+        background-color: crimson;
       }
-
-       @media (min-width: 600px) And (max-width: 700px) {
-        div {
-          background-color: yellow;
-        }
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div id="box1">Box 1</div>
-    </div>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box</div>
+  </div>
+</body>
 </html>

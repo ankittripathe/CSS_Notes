@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex-box (align-content)</title>
-    <style>
-      div {
-        height: 50px;
-        width: 150px;
-        border: 2px solid black;
-      }
-      #box1 {
-        background-color: aqua;
-      }
+<head>
+  <title>flex-box (align-content)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      #box2 {
-        background-color: blue;
-      }
+    div {
+      height: 80px;
+      width: 150px;
+      border: 2px solid black;
+      text-align: center;
+    }
 
-      #box3 {
-        background-color: green;
-        
-      }
-      #box4 {
-        background-color: yellow;
-      }
-      #box5 {
-        background-color: maroon;
-      }
+    #containers {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* align-items: center; */
+      /* align-content: center; */
+      align-content: start;
+      align-content: end;
+      align-content: space-between;
+      align-content: space-around;
+      align-content: space-evenly;
+    }
+  </style>
+</head>
 
-      #containers {
-        height: 600px;
-        width: 97vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center; 
-        align-items: center;
-        /* align-items: flex-start; */
-        align-content: center;
-      }
-    </style>
-  </head>
-  <body>
-    <li>align-content: alignment of space between & around the content</li>
+<body>
+  <h2 style="margin: 10px">
+    align-content: alignment of space between & around the content.
+  </h2>
 
-    <div id="containers">
-      <div id="box1">Box1</div>
-      <div id="box2">Box2</div>
-      <div id="box3">Box3</div>
-      <div id="box4">Box4</div>
-      <div id="box5">Box5</div>
+  <div id="containers">
+    <div id="box1" style="background-color:orangered">Box1</div>
+    <div id="box2" style="background-color: navy">Box2</div>
+    <div id="box3" style="background-color: greenyellow">Box3</div>
+    <div id="box4" style="background-color:lightsalmon">Box4</div>
+    <div id="box5" style="background-color: firebrick">Box5</div>
 
-      <div id="box1">Box1</div>
-      <div id="box2">Box2</div>
-      <div id="box3">Box3</div>
-      <div id="box4">Box4</div>
-      <div id="box5">Box5</div>
-    </div>
-  </body>
+    <div id="box1" style="background-color:orangered">Box1</div>
+    <div id="box2" style="background-color: navy">Box2</div>
+    <div id="box3" style="background-color: greenyellow">Box3</div>
+    <div id="box4" style="background-color:lightsalmon">Box4</div>
+    <div id="box5" style="background-color: firebrick">Box5</div>
+  </div>
+</body>
 </html>

@@ -44,3 +44,16 @@ Box5 is absolute → doesn’t affect siblings.
 → It’s only “floating” inside Box4, so its position doesn’t disturb other boxes.
 
 So the real “pushing” effect is because of Box4 (relative positioning), not Box5.
+
+
+<!-- ******************** -->
+align-items = positioning individual people in a line
+align-content = positioning the whole group of lines
+
+Works when there are multiple lines of items (i.e., when wrapping occurs with flex-wrap: wrap).
+It aligns the lines themselves along the cross axis.
+
+
+Property	Affects	Works when	Example use
+align-items	Individual items	Always (single or multiple lines)	Centering items in one line
+align-content	Multiple lines (the whole group)	Only when wrapping (flex-wrap: wrap)	Controlling spacing between rows

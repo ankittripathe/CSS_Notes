@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex-box (Flex-wrap)</title>
+    <title>flex-box (align-items)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       div {
-        height: 50px;
+        height: 100px;
         width: 150px;
-        border: 2px solid black;
-      }
-      #box1 {
-        background-color: aqua;
-        height: 75px;
-      }
-      #box2 {
-        background-color: blue;
-        height: 150px;
-      }
-      #box3 {
-        background-color: green;
-        height: 50px;
-      }
-      #box4 {
-        background-color: yellow;
-      }
-      #box5 {
-        background-color: maroon;
+        border: 1px solid black;
+        text-align: center;
       }
 
       #containers {
-        height: 600px;
-        width: 97vw;
+        height: 586px;
+        width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: center; 
-        align-items: center;
         /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: start; */
+        /* align-items: end; */
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <li>align-items: alignment along the cross axis</li>
-    <li>align-content: alignment of space between & around the content</li>
-
+    <h2>
+      align-items: alignment along the cross axis (Y-axis) vertically.
+    </h2>
+    
     <div id="containers">
-      <div id="box1">Box1</div>
-      <div id="box2">Box2</div>
-      <div id="box3">Box3</div>
-      <div id="box4">Box4</div>
-      <div id="box5">Box5</div>
+      <div id="box1" style="background-color: lightgreen">Box1</div>
+      <div id="box2" style="background-color: orangered">Box2</div>
+      <div id="box3" style="background-color: yellow">Box3</div>
+      <div id="box4" style="background-color: navy">Box4</div>
+      <div id="box5" style="background-color: pink">Box5</div>
     </div>
   </body>
 </html>

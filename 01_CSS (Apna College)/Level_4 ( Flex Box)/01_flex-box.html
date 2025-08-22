@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Level_4 (flex box)</title>
-    <style>
-      body {
-        text-align: center;
-      }
+<head>
+  <title>Level_4 (flex box)</title>
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+    }
 
-      div {
-        height: 100px;
-        width: 100px;
-        border: 2px solid black;
-      }
+    #containers {
+      height: 600px;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Flexbox: It is one dimensional layout for arranging items in rows & columns.
+  </h1>
 
-      #box1 {
-        background-color: aqua;
-      }
+  <ul>
+    <h1>flexbox direction</h1>
+    <li>
+      flex-direction: row; (default) [main axis:- row (from left to right) i.e => horizentally (x-axis)]
+    </li>
 
-      #box2 {
-        background-color: blue;
-      }
+    <li>
+      flex-direction: row-reverse; [main axis:- row (from right to left) i.e => horizentally]
+    </li>
 
-      #box3 {
-        background-color: green;
-      }
+    <li>
+      flex-direction: column; [main axis:- column (from Top to bottom) i.e => vertically (y-axis)]
+    </li>
 
-      #box4 {
-        background-color: yellow;
-      }
-
-      #box5 {
-        background-color: maroon;
-      }
-
-      #containers {
-        height: 500px;
-        width: 700px;    
-        display: flex;
-        flex-direction: row;
-        flex-direction: row-reverse;
-        /* flex-direction: column; */
-        /* flex-direction: column-reverse; */
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Flexbox=> It is one dimensional layout for arranging items in rows & columns</h1>
-    <ul>
-      <h1>flexbox direction</h1>
-      <li>flex-direction: row; (default) [main axis = row (from left to rigt) i.e => horizentally]</li>
-      <li>flex-direction: row-reverse; [main axis = row (from right to left) i.e => horizentally]</li>
-      <li>flex-direction: column; [main axis = column (from Top to bottom) i.e => vertically]</li>
-      <li>flex-direction: column-reverse; [main axis = column (from bottom to Top) i.e => vertically]</li>
-    </ul>
-    <div id="containers">
-      <div id="box1">Box1</div>
-      <div id="box2">Box2</div>
-      <div id="box3">Box3</div>
-      <div id="box4">Box4</div>
-      <div id="box5">Box5</div>
-    </div>
-    <!-- notes: container ke height, width jitna hoga  usi ke Ander baki sare div/ box ko fit krna hoga jab tak content allow kr rha hai Aur agar content bada huwa  tab toh bahar aa jaega. -->
-  </body>
+    <li>
+      flex-direction: column-reverse; [main axis:- column (from bottom to Top) i.e => vertically]
+    </li>
+  </ul>
+  <div id="containers">
+    <div id="box1" style="background-color: lightgreen;">Box1</div>
+    <div id="box2" style="background-color: navy;">Box2</div>
+    <div id="box3" style="background-color: orangered;">Box3</div>
+    <div id="box4" style="background-color: palevioletred;">Box4</div>
+    <div id="box5" style="background-color: crimson;">Box5</div>
+  </div>
+  <!-- Notes: container ke height, width jitna hoga usi ke Ander baki sare div/ box ko fit krna hoga  jab tak content allow kr rha hai Aur agar content bada huwa tab toh bahar aa jaega. -->
+</body>
 </html>

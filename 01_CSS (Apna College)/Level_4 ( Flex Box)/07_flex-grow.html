@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>flexBox (flex-grow, flex-shrink & flex-basis)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    #box1 {
+      flex-grow: 1;
+    }
+
+    #box2 {
+      flex-grow: 2;
+    }
+
+    #box3 {
+      /* flex-shrink: 0; */
+      /* flex-shrink: 1; */
+      flex-shrink: 5;
+    }
+
+    #box5 {
+      flex-basis: 300px; /* Particular box ka width start se etna hi rhega */
+    }
+
+    #box6 {
+      flex-grow: 5;
+      flex-shrink: 3;
+      /* flex-basis: 600px; */
+      /* shorthand flex: flex-grow | flex-shrink | flex-basis; */
+      /* flex: 0 5 700px; */
+    }
+
+    #containers {
+      height: 590px;
+      border: 3px solid lawngreen;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <h3>
+    flex-grow:- how much a flex item will grow relative to others if there’s extra space in the container.
+    <li>Default: 0 (items won't grow).</li>
+    <li>If set to 1, the item will take up available space.</li>
+    <li>If multiple items have flex-grow, space is distributed proportionally.</li>
+  </h3>
+
+  <h2>
+    flex-shrink:- how much a flex item will shrink relative to others if there’s not enough space in the container.
+    <li>Default: 1 (items shrink to fit)</li>
+    <li>If set to 0, the item won't shrink (it will keep its size even if container is too small)</li>
+    <li>If multiple items have flex-shrink, shrinking is distributed proportionally</li>
+  </h2>
+
+  <div id="containers">
+    <div class="box" id="box1" style="background-color: lightskyblue;">Box1</div>
+    <div class="box" id="box2" style="background-color: navy;">Box2</div>
+    <div class="box" id="box3" style="background-color: crimson;">Box3</div>
+    <div class="box" id="box4" style="background-color: lightgreen;">Box4</div>
+    <div class="box" id="box5" style="background-color: yellow;">Box5</div>
+    <div class="box" id="box6" style="background-color: lightcoral">Box6</div>
+  </div>
+</body>
+</html>
