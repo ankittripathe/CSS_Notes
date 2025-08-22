@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratice_Set 8</title>
+    <title>Pratice Set8</title>
     <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+
       .loder {
-        height: 100px;
-        width: 100px;
+        height: 130px;
+        width: 130px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 150px auto;
+        margin: 180px auto;
         border-radius: 50%;
         border: 20px solid #63d2ff;
         border-top: 20px solid #fff766;
         border-bottom: 20px solid red;
-        /*
-         animation: spinAnimate;
-         animation-direction: 2s;
-         animation-timing-function: ease-in;
-         animation-delay: 0s;
-         animation-iteration-count: infinite;
-         animation-direction: normal;
-        */
         animation: spinAnimate 3s linear 0s infinite normal;
       }
 
@@ -31,6 +26,7 @@
         from {
           transform: rotate(0deg);
         }
+        
         to {
           transform: rotate(360deg);
         }
