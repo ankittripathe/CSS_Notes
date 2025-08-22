@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Level_3 [units in CSS (2.Em)]</title>
-    <link rel="stylesheet" href="index1.css" />
-    <style>
-      #box1 {
-        height: 250px;
-        width: 300px;
-        background-color: limegreen;
-        font-size: 20px;     
-        /* font size by defaut 16px */
-      }
+<head>
+  <title>Level_3 [units in CSS (em)]</title>
+  <style>
+    #box1 {
+      height: 200px;
+      width: 300px;
+      background-color: limegreen;
+      font-size: 30px;
+      /* Bydefault font size = 16px */
+    }
 
-      #box2 { 
-        height: 100px;       
-        background-color: yellow;
-        margin-left: 10%;
-        font-size: 0.5em;  /* half of parents's size */
-        /* font-size: 2em;    2 times of parents's size 2*10= 20px   */
-        /* width me font size of itself dekha jaega na ki parent ka (font size of child se multiply ho jaega. here breaking down font-size = 2em = double of its parent 2*10 = 20px, 
-        20px* 10em= 400 px
+    #box2 {
+      height: 100px;
+      background-color: yellow;
+      /* margin-left: 10%; */
+      font-size: 0.5em;
+      /* half of parents's size */
+      /* font-size: 2em;    2 times of parents's size 2*30= 60px   */
+      /* width me font size of itself dekha jaega na ki parent ka (font size of child se multiply ho jaega. here breakdown font-size = 2em = double of its parent 2*30 = 60px, 
+        60px* 10em= 600 px
         */
-        width: 20em;
-        /* parent ke font size se pahle child wala font-size multiply hoga phir child wale font size se width wala multiply hoga */
-      }
-    </style>
-  </head>
-  <body>
-    <div id="box1">box1:-parent
-      <div id="box2">box2:-child</div>
-    </div>
-  </body>
+      width: 10em;
+      /* parent ke font size se pahle child wala font-size multiply hoga phir child wale font size se width wala multiply hoga */
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">box1: parent
+    <div id="box2">box2: child</div>
+  </div>
+</body>
 </html>

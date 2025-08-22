@@ -1,81 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Level_3 (Postion property in CSS)</title>
-    <style>
-      div {
-        height: 100px;
-        width: 100px;
-        background-color: aqua;
-        border: 2px solid black;
-        display: inline-block;
-      }
+<head>
+  <title>Level_3 (Position property in CSS)</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: beige;
+    }
 
-      #box1 {
-      /*koie changes nhi hoga position:static krne se because this is by default*/
-      position: static; 
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: aqua;
+      border: 1px solid black;
+      display: inline-block;
+    }
+
+    #box1 {
+      /*koie changes nhi hoga position: static krne se because this is ByDefault*/
+      position: static;
       top: 50px;
       bottom: 50px;
-      }
+      background-color: red;
+    }
 
-      #box2 {
+    #box2 {
       /* khud ke relative means jaha khada hai ohi se start kr dega change krna */
+      background-color: blue;
       position: relative;
       top: 50px;
       left: 50px;
       /* bottom: 100px; */
-      }
+    }
 
-    /* positioned relative to its closest position ancestor
-      (but closest ancestor(static na ho) aur kuch vi ho relative, fixed etc). */
-      #box3 {
+
+    /*
+    Notes:-
+    (1) positioned relative to the closest ancestor that has a position set to something other than static (like relative, absolute, fixed, or sticky).
+     
+    (2) If no such ancestor exists → it will be positioned relative to the <html> (viewport/page itself).
+    (3) absolute → looks for the closest ancestor that is NOT static (relative, absolute, fixed, sticky).
+    (4) If found → positions itself relative to that.
+    (5) If not → relative to the page/viewport.
+    */
+
+    #box3 {
+      background-color: yellow;
       position: absolute;
       top: 100px;
       /* left: 50px; */
       right: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <ul>
-      <li>
-        Static:- default position(The top, right, bottom, left, and z-index properties have no effect )
-      </li>
+    }
 
-      <li>
-        relative:- element is relative to itself.(The top, right, bottom, left, and z-index will work )
-      </li>
+    #box4{
+      position: absolute;
+      background-color: lightsalmon;
+      left: 50px;
+      top: 100px;
+    }
 
-      <li>
-        absolute:- positioned relative to its closest position ancestor(but closest ancestor(static na ho) aur kuch vi ho relative, fixed etc).
-        <p>
-          (removed from flow => apply hote hi work krne lagea aur sayad gayab ho jaey aur dikhe na jab tak koie property na apply ho)
-        </p>
-        <p>
-          for example: here h1 in ancestor(parent) of a tag
-            <h1>
-                <a></a>
-            </h1> 
-        </p>
-      </li>
+    #box5{
+      background-color: aquamarine;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 30px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      Static:- default position (top, right, bottom, left, and z-index properties have no effect)
+    </li>
 
-      <li>
-        fixed:-positioned relative to browser.(removed from flow)
-      </li>
+    <li>
+      relative:- element is relative to itself. (top, right, bottom, left, and z-index will work)
+    </li>
 
-      <li>
-        sticky:-positioned based on user's scrool position.
-      </li>
-    </ul>
+    <li>
+      absolute:- positioned relative to its closest position ancestor [but closest ancestor (static na ho) aur kuch vi ho relative, fixed etc].
+      <p>
+        (removed from flow => apply hote hi work krne lagea aur sayad gayab ho jaey aur dikhe na jab tak koie property na apply ho)
+      </p>
+      <p>
+        for example: here below h1 in ancestor(parent) of anchor(a) tag
+      <h1>
+        <a></a>
+      </h1>
+      </p>
+    </li>
 
-    <h1>
-      Position playground
-    </h1>
+    <li>
+      fixed:- positioned relative to browser (removed from flow).
+    </li>
 
-    <div id="box1" style="background-color: red">box1</div>
-    <div id="box2" style="background-color: rgb(70, 223, 49)">box2</div>
-    <div id="box3" style="background-color: yellow">box3</div>
-  </body>
+    <li>
+      sticky:- positioned based on user's scrool position.
+    </li>
+  </ul>
+
+  <h1>
+    Position playground
+  </h1>
+
+  <div id="box1">box1</div>
+  <div id="box2">box2</div>
+  <div id="box3">box3</div>
+  <div id="box4">
+    <div id="box5">box5:- child</div>
+  </div>
+</body>
 </html>

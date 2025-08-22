@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>Level_3 (Background Image)</title>
     <style>
       div {
@@ -9,19 +8,16 @@
         width: 300px;
         border: 2px solid black;
         display: inline-block;
-        /* background-color:mediumspringgreen; */
       }
 
       #box1 {
         background-image: url("images/msd.JPG");
-        background-size: contain;
-        /*repaet vi ho skta hai image ka part*/
+        background-size: contain;   /* repaet vi ho skta hai Image ka part */
       }
 
       #box2 {
         background-image: url("images/Ankit.jpeg");
-        background-size: cover;
-        /*Ekdam fit jitna height, width hai*/
+        background-size: cover; /* Ekdam fit jitna height, width hai */
       }
 
       body {
@@ -31,18 +27,16 @@
     </style>
   </head>
   <body>
-
-    <h1>Background Image</h1>
-    <ul>
-      <li>background-image:cover/ contain/ auto</li>
-      <li>cover:-no empty space (image fit)</li>
-      <li>contain:-visible , fit but repeat</li>
-      <li>auto:-enlargerd</li>
-    </ul>
+    <ol>
+      <h1>Background Image</h1>
+      <li>background-image: cover/ contain/ auto</li>
+      <li>cover: no empty space (image fit)</li>
+      <li>contain: visible, fit but repeat</li>
+      <li>auto: enlargerd</li>
+    </ol>
 
     <div id="box1" style="background-color: navy">box1</div>
     <div id="box2" style="background-color: orange">box2</div>
     <div id="box3" style="background-color: yellow">box3</div>
-    <div id="box4" style="background-color: lightgreen">box4</div>
   </body>
 </html>
