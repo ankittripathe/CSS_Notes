@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit in CSS(vh(viewport-height) & vw(viewport-width))</title>
+    <title>unit in css:- vh(viewport-height), vw(viewport-width)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       .containers {
-        border: 3px solid orangered;
         background-color: lightblue;
-        height: 100vh; /* broswer ka 100% height */
-        width: 50vw; /* broswer ka 50% width */
+        border: 2px solid black;
         text-align: center;
+        height: 85vh; /* broswer ka 85% height */
+        width: 100vw; /* broswer ka 100% width */
       }
     </style>
   </head>
   <body>
-    <h1>vh:- Relative to 1% of the height of the viewport*</h1>
+    <h2>
+      vh:- Relative to 1% of the height of the viewport*
+    </h2>
+
     <p>
-      For example, if the viewport height is 1000 pixels, then 1vh would be
-      equal to 10 pixels (since 1% of 1000 is 10).
-     
+      vh: This unit represents 1% of the viewport height. Similarly, if the
+      viewport height is 1000 pixels, then 1vw would be equal to 10 pixels.
     </p>
 
-    <h1>vw:- Relative to 1% of the width of the viewport*</h1>
+    <h2>
+      vw:- Relative to 1% of the width of the viewport*
+    </h2>
+
     <p>
       vw: This unit represents 1% of the viewport width. Similarly, if the
-      viewport width is 1000 pixels, then 1vw would be equal to 10 pixels
+      viewport width is 1000 pixels, then 1vw would be equal to 10 pixels.
     </p>
 
-    <div class="containers">Topic: vh & vw</div>
+    <div class="containers">
+      vh(viewport-height), vw(viewport-width)
+    </div>
   </body>
 </html>

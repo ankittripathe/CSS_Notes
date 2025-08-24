@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit in CSS (em)</title>
+    <title>unit in css (em)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       .containers {
         height: 200px;
-        width: 500px;
-        background-color: green;
+        width: 600px;
+        background-color: lightgreen;
         font-size: 20px;
-       /* font size by defaut 16px  hota hai pure body me*/
+       /* By-defaut font-size 16px hota hai pure body me */
       } 
 
       .box {
         height: 100px;
-        background-color: yellow;
-        /* font-size: 0.5em; half of parents's size  0.5*10 = 10px */
-
+        background-color: orangered;
+        /* font-size: 50px; */
+        font-size: 0.5em; /* half of Parents's size 0.5*10 = 10px */
         font-size: 2em;   /* 2 times of parents's size 2*20= 40px */
-        width: 5em;     /* 40px*5:= 200px*/
-        
-        font-size: 50px;
-        width: 6em;     /* 50px*6:= 300px*/
+        width: 5em;     /* 40px*5 = 200px */
+        width: 6em;     /* 40px*6 = 240px */
       }
 
+      /* Notes:
+      (1) width me font size of itself dekha jaega na ki parent ka (font size of child se multiply ho jaega. Here breaking down font-size = 2em = double of its parent 2*10 = 20px, 20px*10em = 400px
 
-      /* 
-      width me font size of itself dekha jaega na ki parent ka (font size of child se multiply ho jaega. here breaking down font-size = 2em = double of its parent 2*10 = 20px, 
-      20px* 10em= 400 px
+      (2)  parent ke font size se pahle child wala font-size multiply hoga phir child wale font size se width wala multiply hoga
       */
-
-      /* parent ke font size se pahle child wala font-size multiply hoga phir child wale font size se width wala multiply hoga */
     </style>
   </head>
-
   <body>
-    <!-- em -->
     <h2>
-      em:- Relative to the font-size of the element (2em means 2 times the size
-      of the current font)
+      em:- Relative to the font-size of the element (2em means 2 times the size of the current font)
     </h2>
 
     <div class="containers">
-      <div class="box">Topic: Unit in CSS(em)</div>
+      <div class="box">Unit in CSS:- em</div>
     </div>
   </body>
 </html>

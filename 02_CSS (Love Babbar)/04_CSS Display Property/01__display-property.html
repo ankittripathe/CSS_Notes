@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lecture_04 (display property)</title>
-  <style>
-     *{ 
-       margin: 0px;
-       padding: 0;
-       box-sizing: border-box; 
-        /*box sizing border krne se jab hum  padding set krenge tab actual height, width me koi  fark nhi hoga bas box ke ander ka content srink ho jaega aur usi me sab changes honge jo ham apply krenge.*/
-     }
+    <title>Lecture_04 (display property)</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            /* box sizing border krne se jab hum padding set krenge tab actual height, width me koi fark
+        nhi hoga bas box ke ander ka content srink ho jaega aur usi me sab changes honge jo ham
+        apply krenge.*/
+        }
 
-    h1{
-       background-color: red;
-       height: 100px;
-       width: 900px;
-       margin: 20px;
-       /* display: inline; */
-       /* display: inline-block ; */
-    }
+        h1 {
+            background-color: red;
+            height: 100px;
+            width: 900px;
+            margin: 20px;
+            /* display: inline; */
+            display: inline-block;
+            padding: 20px;
+        }
+        
+        h3 li {
+            list-style-type: none;
+            background-color: rgba(29, 111, 182, 0.788);
+        }
 
-    div{
-        background-color: aqua;
-        height: 100px;
-        width: 200px;
-        display: inline;
-        /* display inline me height & width set nhi kr skte. */
-    }
+        p{
+            background-color: chocolate; 
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+            /* display: inline; */
+            /* margin-top: 10px; */
+        }
 
-    
-    span{
-        background-color: yellow;
-        height: 200px;
-        width: 200px;
-        margin: 100px;
-        text-align: center;
-      }
+        ul{
+            background-color: darkmagenta;
+            padding: 20px;
+            display: inline-block;
+            margin-block: 10px;
+            margin-inline:20px;
+            color: white;
+        }
 
+        span {
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            /* span is inline elements so jitna space jaruri hoga utna hi lega */
+        }
 
-    button{
-        background-color: orangered;
-        /* height: 200px; */
-        /* width: 900px; */
-        /* display: block; */
-        /* display: inline; */
-        /* display: inline-block; */
-      }
+        button {
+            background-color: orangered;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+            border: none;
+            /* display: block; */
+            /* display: inline; */
+            /* display: inline-block; */
+        }
 
-
-    img{
-        background-color: goldenrod;
-        /* height: 200px; */
-        /* width: 100px; */
-        /* margin: 100px; */
-        /* display: inline-block; */
-    }
- </style>
+        img {
+            background-color: goldenrod;
+            /* height: 200px; */
+            /* width: 100px; */
+            /* margin: 100px; */
+            /* display: inline-block; */
+        }
+    </style>
 <body>
-    <h1>display property is used to see how an element.</h1>
-    <br><br><hr>
+    <h1>
+        Topic: display property
+    </h1>
+    <hr>
 
-    <div>Topic: display property</div>
-    <br><br><hr>
+    <h3>
+        Block-Elements
+        <li>(1) new line pe aate hai (Takes full space available in width).</li>
+        <li>(2) custom height & width set kr skte hai.</li>
+        <li>(3) margin padding vi set kr skte hai. </li>
+    </h3>
+    <hr>
+
+    <h3>
+        Inline-Elements
+        <li>(1) Same line me aane ka try krte hai agar jagah khali hoga toh nhi toh next line.</li>
+        <li>(2) Takes only the required width by the elements. </li>
+        <li>(3) Custom height & width apply nhi kr skte.</li>
+        <li>(4) Margin shirf horizental line (x-axis) me apply hoga vertical(y-axis) top aur bottom me nhi hoga</li>
+    </h3>
+    <hr><hr>
 
     <p>
-        block Elements
-        1. new line pe aate hai (Takes full space available in width.)
-        2. custom height & width set kr skte hai.
-        3. margin padding vi set kr skte hai. 
-    </p>
-    <br><br><br>
-
-    <p>
-        inline Elements
-        1. same line me aane ka try krte hai agar jagah kahli hoga toh nhi toh next line.
-        2. Takes only the required width by the elements. 
-        3. custom height & width apply nhi kr skte.
-        4. margin shirf horizental line(x-axis) me apply hoga top aur buttom me nhi hoga
-    </p>
-    <br><br><br>
-
-    <p>
-        inline-block
-        Inline-block elements are elements that have characteristics of both inline and block elements. They flow inline like inline elements, but you can apply block-level properties to them, such as setting width, height, margin, and padding. Here are some common HTML inline-block elements
+        Inline-block elements are elements that have characteristics of both inline and block elements. 
+        <br>
+        They flow inline like inline elements, but you can apply block-level properties to them, such as setting width, height, margin,and padding.
+        <br>
+        Here are some common HTML inline-block elements
     </p>
     <br>
 
@@ -94,59 +111,54 @@
 
         <li>
             button: Although inline by default, it behaves as an inline-block element when you apply styles like height and width.
-       </li>
+        </li>
 
-        <li> 
+        <li>
             input: The input element also behaves as an inline-block element.
         </li>
 
         <li>
             label: Labels are often displayed inline but can be styled as blocks for layout purposes.
-       </li>
+        </li>
 
         <li>
             select: Dropdown select boxes behave as inline-block elements.
-       </li>
+        </li>
 
         <li>
             textarea: Similar to input, textarea elements are inline-block by default.
-            These elements can be easily styled using CSS properties applicable to block-level elements while still retaining their inline flow characteristics.
         </li>
     </ul>
-    <br><br>
+    <hr>
 
-    <span>Span_1</span>
-    <span>span_2</span>
-
-    <br><br>
-
+    <span>Span Tag 1</span>
+    <span>Span Tag 2</span>
     <button>click here</button>
-    <br><br>
 
-<!-- 
+    <!-- 
     display: inline/ block / inline-block / none;
-    block = Takes full space available in width.
-    inline = Takes only the space required by the elements.
-    inline-block = Similar to inline but we can set margin & padding(margin/ padding/ height / width).
-    none = To remove elemets from document flow.
+    block:- Takes full space available in width.
+    inline:- Takes only the space required by the elements.
+    inline-block:- Similar to inline but we can set margin & padding(margin/ padding/ height / width).
+    none:-To remove elemets from document flow.
 -->
 
-<!-- Here are the block-level elements in HTML:
+    <!-- Here are the block-level elements in HTML:
    <h1>-<h6>  <div>   <article>   <address>  <aside>  <fieldset>  <footer>  <form>  <header>  <figure>
    <figcaption>  <hr>  <li> <main> <nav>  <ol>  <p>  <pre>  <section>  <table>  <tfoot>  <ul>  <video>
 -->
 
-<!-- Here are the inline elements in HTML:
+    <!-- Here are the inline elements in HTML:
     <a>    <img>  <button>  <input>    <label>  <select>  <textarea>  <span>  <big>  <small>
     <b>     <br>     <em>    <strong>    <sub>     <sup>        <script>  
 -->
-  
 
-<!-- 
+
+    <!-- 
 Inline-block elements are elements that have characteristics of both inline and block elements. They flow inline like inline elements, but you can apply block-level properties to them, such as setting width, height, margin, and padding.
 
 Here are some common HTML inline-block elements:
 <img>  <button>  <input>  <label>  <select>  <textarea>
- -->
+-->
 </body>
 </html>

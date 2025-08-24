@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lectur_3 {Box model=> (height, width)}</title>
+    <title>Lectur_3 [Box model:- (height, width)]</title>
     <style>
       h1 {
-        background-color: aquamarine;
-        /* border-style: solid; */
+        background-color: lightgreen;
         /* border-width: 5px; */
+        /* border-style: solid; */
         /* border-color: black;  */
-        border: 3px solid black;
+        border: 2px solid black;
         /* border-bottom: 2px solid black; */
-        /* border-top: 2px solid black; */
-        /* border-left: 2px solid black; */
+        /* border-top: 2px solid orange; */
+        /* border-left: 2px solid yellow; */
         /* border-right: 2px double green; */
 
         /* border-bottom-left-radius: 25px; */
         /* border-bottom-right-radius: 30px; */
         /* border-top-right-radius: 15px; */
         /* border-top-left-radius: 20px; */
-        /* border-radius: 20px; */
-        height: 180px;
-        width: 370px;
-        padding: 5px;
+        border-radius: 20px;
+        height: 200px;
+        width: 400px;
+        padding: 10px;
       }
 
       span {
-        background-color: aquamarine;
-        border: 3px solid black;
-        width: 500px;
-        /*span tag pe height & width apply Esliye nhi ho rha hau  kauki o inline elemets hai jitna content area occupy krna hoga utna hi krega.*/
-        height: 100px;
-      }
-
-      .fisrtpara {
-        background-color: green;
-        border: 3px solid black;
+        background-color: salmon;
+        border: 2px solid black;
         border-radius: 5px;
-        width: 350px;
+        height: 100px;
+        width: 500px;
+        padding: 10px;
+        /*
+        span tag pe height & width apply nhi ho rha hai because o inline elemets hai jitna content area occupy krna hoga utna hi krega.
+        */
       }
 
-      .secondpara {
+      .paraOne {
+        background-color: palevioletred;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 400px;
+        padding: 10px;
+      }
+
+      .paraTwo {
         background-color: orangered;
         border: 3px solid black;
-        border-radius: 5px;
-        width: 350px;
+        border-radius: 10px;
+        width: 400px;
+        padding: 10px;
       }
 
-      .thirdpara {
+      .paraThree {
         background-color: yellow;
         border: 3px solid black;
-        border-radius: 5px;
-        width: 350px;
+        border-radius: 10px;
+        width: 400px;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>Box Model (height, width)</h1>
+    <h1>
+      Box Model (height, width)
+    </h1>
 
-    <span>Wlcm to Emart E-commerce</span>
+    <span>
+      Welcome to TrendWear online Clothing Brand
+    </span>
 
-    <p class="fisrtpara">
+    <p class="paraOne">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
       cupiditate recusandae necessitatibus soluta rem assumenda in repellendus
       quasi molestias ad, earum et eaque tempore blanditiis porro vitae sapiente
-      ab numquam reprehenderit? Repellendus fuga consequuntur doloribus dolorem!
-      Voluptate, tenetur. Fuga, quasi.
     </p>
 
-    <p class="secondpara">
+    <p class="paraTwo">
       Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit
       amet consectetur adipisicing elit. Inventore, possimus.
     </p>
 
-    <p class="thirdpara">
+    <p class="paraThree">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eveniet
       expedita similique fugiat nam numquam inventore corrupti! At, voluptas
-      quasi animi a id sunt labore impedit temporibus.
     </p>
   </body>
 </html>

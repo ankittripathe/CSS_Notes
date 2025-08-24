@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture_3 (margin-inline & margin-block)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       h1 {
-        background-color: palevioletred;
+        background-color:lightblue;
         /* margin-inline-start: 100px; */
         /* margin-inline-end: 60px; */
-        /* applied on both end */
-        margin-inline: 100px;
-        /* 100px is start and 60px is end */
-        margin-inline: 100px 60px;
+          /* applied on both end */
+        /* margin-inline: 100px;        */
+        margin-inline: 150px 60px;  
+          /* 100px is start and 60px is end */
       }
 
       h2 {
@@ -27,9 +33,9 @@
   <body>
     <h1>
       Margin-inline:- property specifies the margin at the start(left) &
-      end(right)in the inline direction(x-axis).
+      end(right)in the inline direction (x-axis).
       <br />
-      It is a shorthand property for the following properties:
+      It is a shorthand property for the following Properties:
       <li>margin-inline-start (left-side)</li>
       <li>margin-inline-end (right-side)</li>
       <li>margin-inline: from both side</li>
@@ -37,13 +43,13 @@
 
     <h2>
       Margin-block:- property specifies the margin at the start(top) &
-      end(bottom) in the block direction(y-axis).
+      end(bottom) in the block direction (y-axis).
       <br />
-      It is shorthand property for the following properties:
+      It is shorthand property for the following Properties:
       <li>margin-block-start (top-side)</li>
       <li>margin-block-end (bottom-side)</li>
       <li>margin-block: from top to bottom</li>
-      <li>margin-block: 10px; margin at start and end is 10px</li>
+      <li>margin-block: 10px; margin start and margin end is 10px</li>
     </h2>
   </body>
 </html>

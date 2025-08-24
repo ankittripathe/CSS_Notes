@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lecture_3 {Box Model(margin)}</title>
+    <title>Lecture_3 Box Model(margin)</title>
     <style>
-      .fisrtpara {
-        background-color: green;
-        border: 3px solid black;
-        border-radius: 5px;
-        height: 200px;
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .paraOne {
+        background-color: coral;
+        border: 2px solid black;
+        border-radius: 15px;
+        height: 150px;
         width: 600px;
-        padding: 30px;
+        padding: 25px;
         /* margin-top: 40px; */
         /* margin-right: 30px; */
         /* margin-left: 10px;  */
@@ -22,19 +26,18 @@
       }
 
       h5{
-        background-color: palevioletred;
+        background-color: yellowgreen;
         /* margin-inline-start: 60px; */
         /* margin-inline-end: 30px; */
         margin-inline: 100px;   
       }
-      
     </style>
   </head>
   <body>
     <h1>
-      Margins are used to create space around elements, outside of any defined
-      borders.
+      Margins are used to create space around elements, Outside of any defined borders.
     </h1>
+
     <ul>
       CSS has properties for specifying the margin for each side of an element:
       <li>margin-top</li>
@@ -61,18 +64,16 @@
         margin Shorthand: top-butttom | right-left 
         margin: 30px 30px;
     -->
-    <p class="fisrtpara">
+    <p class="paraOne">
       Ka Matlab English MeKa Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me
     </p>
 
-    <p class="fisrtpara">
+    <p class="paraTwo">
       Ka Matlab English MeKa Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me Ka Matlab English Me
     </p>
 
     <h5>
-      The margin-inline property specifies the margin at the start and end in
-      the inline direction, and is a shorthand property for the following
-      properties:
+      The margin-inline property specifies the margin at the start and end in the inline direction, and is a shorthand property for the following Properties:
       <li>margin-inline-start (left-side)</li>
       <li>margin-inline-end (right-side)</li>
     </h5>

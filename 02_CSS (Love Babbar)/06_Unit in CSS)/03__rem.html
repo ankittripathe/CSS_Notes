@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit in CSS(rem)</title>
+    <title>unit in css (rem)</title>
     <style>
-      .firstpara {
-        background-color: yellow;
-        margin: 5rem;
-        height: 20rem; /* 16px*20= 320px */
-        width: 20rem; /* 16px*20= 320px */
-        font-size: 5rem; /* root elements body ke just badd wala means font size: 16px 16*5 = 80px*/
-        /* by-default size of root element(body ke ander) = 16px  */
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .paraOne {
+        background-color: orangered;
+        margin: 3rem;  /* 16px*3 = 48px */
+        height: 20rem; /* 16px*20 = 320px */
+        width: 20rem; /* 16px*20 = 320px */
+        font-size: 3rem; /* root elements body ke just badd wala means font size: 16px 16*3 = 48px*/
+        /* By-default size of root element(body ke ander) = 16px  */
       }
     </style>
   </head>
   <body>
-    <!-- rem -->
     <h3>
-      rem(Root em)=> relative to font size of the root elements(root means html)
+      rem(root em):- relative to font size of the root elements (root means HTML)
     </h3>
-
-    <p class="firstpara">rem(root em)</p>
+    <p class="paraOne">
+      rem(root em)
+    </p>
   </body>
 </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position in CSS (Z-index)</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body{
             height: 1000px;
         }
@@ -33,9 +37,8 @@
             background-color: green;
             position: absolute;
             top: 300px;
-            left: 200px;
+            left: 220px;
             z-index: 6;
-     
         }
 
         .blue{
@@ -54,18 +57,13 @@
     </style>
 </head>
 <body>
-    <h1>Z-index=> It decides the stack level of elements</h1>
-    <h3>
-      Overlapping elements with a larger z-index cover those with a smaller one.
-    </h3>
+    <h1>Z-index:- It decides the stack level of elements</h1>
+    <h3>Overlapping elements with a larger z-index cover those with a smaller one</h3>
     <ul>
       <li>z-index: auto(o)</li>
       <li>z-index: 1/ 2/ 3/...</li>
       <li>z-index: -1/ -2/ -3/...</li>
-      <li>
-        pahle wala(under(ander) ho jata hai) &
-        badd wala[over(upar) aa jata hai]
-      </li>
+      <li>Pahle wala(under(ander) ho jata hai) badd wala[over(upar) aa jata hai]</li>
     </ul>
     
     <div class="container">

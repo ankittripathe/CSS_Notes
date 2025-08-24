@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture_1 (inline CSS, Internal CSS, External CSS)</title>
     <link rel="stylesheet" href="01_intro.css" />
     <style>
       /* Internal CSS */
-      /* Important wala jeet jaega */
+      /* Important wala ka priority first hoga */
       p {
         background-color: orangered !important;
         color: black !important;
@@ -20,12 +18,13 @@
     </style>
   </head>
   <body>
-    <h1>Wlcm to CSS Tutorials</h1>
+    <h1>Welcome to CSS Tutorials</h1>
     <ul>
       <li>Inline CSS</li>
       <li>Internal CSS</li>
       <li>External CSS(Style.css)</li>
     </ul>
+
     <!-- Inline CSS -->
     <p style="background-color: lightseagreen">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, aperiam!
@@ -46,9 +45,9 @@
 
     <!-- 
       Notes: Selector priority
-       1. inline CSS have higher priority then internal & external when they have same proerties applied.
-       2. last me jo placed hoga uski jada priority hogi external(style.css wala) ho ya internal(line wala) head tag me (orderWise last me jo hoga ohi Apply hoga)
-       3. ! important (wala hamesa apply hoga sabse pahle)
+      (1) Inline CSS have higher priority then internal & external when they have same proerties applied.
+      (2) last me jo placed hoga uski jada priority hogi external(style.css wala) ho ya Internal head tag me (orderWise last me jo hoga ohi Apply hoga)
+      (3) ! important (wala hamesa apply hoga sabse pahle)
     -->
   </body>
 </html>

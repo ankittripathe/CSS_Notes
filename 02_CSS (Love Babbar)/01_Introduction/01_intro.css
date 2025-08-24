@@ -1,11 +1,17 @@
-/* This is External CSS */
-p{
-    background-color: red;
-    color:white;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
-    color:green;
+/* External CSS */
+p {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: green;
 }
