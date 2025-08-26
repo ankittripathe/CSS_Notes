@@ -57,3 +57,8 @@ It aligns the lines themselves along the cross axis.
 Property	Affects	Works when	Example use
 align-items	Individual items	Always (single or multiple lines)	Centering items in one line
 align-content	Multiple lines (the whole group)	Only when wrapping (flex-wrap: wrap)	Controlling spacing between rows
+
+<!-- ************************** -->
+/* shorthand for flex direction $ flex wrap */
+flex-flow: row wrap;
+flex-flow: row nowrap;

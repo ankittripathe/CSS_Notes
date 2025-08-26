@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox (flex-wrap)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       .containers {
         border: 3px solid black;
         padding: 5px;
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         /* flex-wrap: nowrap; */
         /* flex-wrap: wrap-reverse; */
-        flex-wrap: wrap;
-
+        /* flex-wrap: wrap; */
         /* shorthand for flex direction $ flex wrap */
-        /* flex-flow: row wrap; */
-        /* flex-flow: row nowrap; */
+        flex-flow: row wrap;
+        flex-flow: row nowrap;
       }
 
       .box {
@@ -45,18 +48,17 @@
     </style>
   </head>
   <body>
-    <h2>
-      flex-wrap:nowrap => value specifies that the flex items will not wrap
-      (this is default).
-    </h2>
-    <h2>
-      flex-wrap:wrap => property specifies whether the flex items should wrap or
-      not.
-    </h2>
-    <h2>
-      flex-wrap:wrap-reverse => value specifies that the flexible items will wrap if
-      necessary, in reverse order:
-    </h2>
+    <h3>
+      flex-wrap: nowrap => Value specifies that the flex items will not wrap (This is default).
+    </h3>
+
+    <h3>
+      flex-wrap: wrap => Property specifies whether the flex items should wrap or not.
+    </h3>
+
+    <h3>
+      flex-wrap: wrap-reverse => Value specifies that the flexible items will wrap if necessary, in reverse order.
+    </h3>
 
     <div class="containers">
       <div class="box" id="box1">A</div>

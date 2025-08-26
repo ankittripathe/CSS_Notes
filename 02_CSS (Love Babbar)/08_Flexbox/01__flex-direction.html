@@ -3,26 +3,32 @@
   <head>
     <title>Flexbox (flex direction)</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       .flex-containers {
-        background-color: rgb(236, 236, 159);
+        background-color:lightcyan;
         border: 3px solid black;
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         /* flex-direction: row-reverse; */
-        flex-direction: column;
-        /* flex-direction: column-reverse; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
       }
 
       .box {
         height: 100px;
         width: 100px;
-        border: 3px solid palevioletred;
+        border: 2px solid orchid;
         margin: 2px;
         padding: 20px;       
       }
 
       #box1 {
-        background-color: aqua;
+        background-color:crimson;
       }
 
       #box2 {
@@ -44,27 +50,38 @@
   </head>
   <body>
     <h1>
-      Flexbox=> It is one dimensional layout for arranging items in rows &
-      columns
+      Flexbox:- It is one dimensional layout for arranging items in rows & columns.
     </h1>
-    <h2>main-axes(horizental => x-axis) & cross-axes(vertically => Y-axis)</h2>
+
+    <h2>
+      main-axes (horizontal:- x-axis) & cross-axes (vertically:- Y-axis)
+    </h2>
+
     <ul>
       <h1>flexbox direction</h1>
       <li>
-        flex-direction: row; (default) [main axis = row (from left to rigt) i.e
-        => horizentally  & cross axis (top to buttom) i.e => vertically]
+        flex-direction: row; (default) 
+        <br>
+        [main axis:- row (from left to right) i.e:- horizontally] &
+        [cross axis:- (top to bottom) i.e:- vertically]
       </li>
+
       <li>
-        flex-direction: row-reverse; [main axis = row (from right to left) i.e
-        => horizentally]
+        flex-direction: row-reverse;
+        <br>
+         [main axis:- row (from right to left) i.e:- horizontally]
       </li>
+
       <li>
-        flex-direction: column; [main axis = column (from Top to bottom) i.e =>
-        vertically]
+        flex-direction: column; 
+        <br>
+        [main axis:- column (from Top to bottom) i.e:- vertically]
       </li>
+
       <li>
-        flex-direction: column-reverse; [main axis = column (from bottom to Top)
-        i.e => vertically]
+        flex-direction: column-reverse; 
+        <br>
+        [main axis:- column (from bottom to Top) i.e:- vertically]
       </li>
     </ul>
 
